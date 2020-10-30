@@ -6,7 +6,7 @@ class StationsService
       f.params[:fuel_type] = 'ELEC'
       f.params[:limit] = 1
     end
-    json = JSON.parse(response.body, symbolize_names: true)
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   private
