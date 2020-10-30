@@ -1,0 +1,14 @@
+<h2 class="name">Station: <%= @station[:station_name] %></h2>
+<p class="address">Address: <%= @station[:street_address] %></p>
+<p class="fuel">Fuel Type: <%= @station[:fuel_type_code] %></p>
+<p class="access">Access Information: <%= @station[:access_days_time] %></p>
+
+<p class="distance">Distance To: <%= @station[:distance].round(1) %> miles</p>
+<p class="travelTime">Travel Time: <%= @map[:formattedTime] %></p>
+<p class="directions">Direction Info: 
+<ol>
+<% @map[:legs][0][:maneuvers].each do |manuver| %>
+  <li><%= manuver[:narrative] %></li>
+<% end %>
+</ol>
+</p>
