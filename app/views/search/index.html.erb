@@ -1,0 +1,13 @@
+<h1>Electric Vehicle Charging Stations</h1>
+<p>Name: <%=@nrel_parsed_response[:fuel_stations].first[:station_name]%></p>
+<p>Street Address: <%=@nrel_parsed_response[:fuel_stations].first[:street_address]%></p>
+<p>Fuel Type: <%=@nrel_parsed_response[:fuel_stations].first[:fuel_type_code]%></p>
+<p>Access Times: <%=@nrel_parsed_response[:fuel_stations].first[:access_days_time]%></p>
+<br>
+<h2>Directions to the Nearest Station</h2>
+<p>Distance to nearest station: <%= @mapquest_parsed_response[:route][:legs].first[:maneuvers].first[:distance].round(1) %> miles</p>
+<p>Travel time to nearest station: <%= @mapquest_parsed_response[:route][:legs].first[:maneuvers].first[:formattedTime] %></p>
+<p>Directions to nearest station:</p>
+<% @mapquest_parsed_response[:route][:legs].first[:maneuvers].each do |step| %>
+  <p><%= step[:narrative] %></p>
+<% end %>
