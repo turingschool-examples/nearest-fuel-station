@@ -15,9 +15,11 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap'
+gem 'faraday'
 
 group :development, :test do
   gem 'pry'
+  gem 'figaro'
 end
 
 group :test do
