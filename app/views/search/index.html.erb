@@ -2,3 +2,6 @@ Station name: <%=  @station.name %><br>
 Address: <%=  @station.full_address %><br>
 Fuel type: <%=  @station.fuel_type %><br>
 Access times: <%= @station.access_time %>
+<br><br>
+Distance to final point: <%= @directions.distance %> mi<br>
+Travel time: <%= @directions.travel_time %> min
