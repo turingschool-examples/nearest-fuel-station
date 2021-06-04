@@ -11,6 +11,11 @@ RSpec.describe 'user can select location and search for station' do
   describe 'when user clicks find nearest station' do
     it 'can see closest electric fuel station and info' do
       expect(current_path).to eq("/search")
+      expect(page.status_code).to eq 200
+      expect(page).to have_content("MOLLYS STATION 2")
+      expect(page).to have_content("4801 Fenton St Denver, CO 80212")
+      expect(page).to have_content("ELEC")
+      expect(page).to have_content("24 hours daily")
     end
   end
 end

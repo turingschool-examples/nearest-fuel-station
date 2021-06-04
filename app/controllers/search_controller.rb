@@ -1,11 +1,5 @@
 class SearchController < ApplicationController
   def index
-
+    @station = StationFacade.find_nearest(params[:location])
   end
-
-  # private
-  #
-  # def _params
-  #   params.permit(:)
-  # end
 end
