@@ -1,0 +1,17 @@
+<p>Closest Fuel Station Near Here:</p>
+<% @station.each do |l| %>
+  Name: <%= l.name %> |
+  Address: <%= l.address %> |
+  Times: <%= l.access_times %> |
+  Fuel Type: <%= l.fuel_type %>
+<% end %>
+
+<p>Directions and info:</p>
+<% @map_info.each do |info| %>
+<%= binding.pry %>
+  <%= info.distance %>
+  <%= info.travel_time %>
+  <% info.directions.each do |d| %>
+    <%= d.first %>
+  <% end %>
+<% end %>
