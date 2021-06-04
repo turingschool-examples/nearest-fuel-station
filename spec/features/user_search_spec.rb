@@ -17,22 +17,11 @@ RSpec.describe 'user can select location and search for station' do
       expect(page).to have_content("ELEC")
       expect(page).to have_content("24 hours daily")
     end
+
+    it 'can see distance, travel time and directions to that station' do
+      expect(page).to have_content("2.669")
+      expect(page).to have_content("00:04:13")
+      expect(page).to have_content("Start out going north on N Lowell Blvd toward W 50th Ave.Turn right onto Regis Blvd.Turn right onto Federal Blvd/US-287 S.Merge onto I-70 W.Take EXIT 270 toward Harlan Street.Turn right onto W 48th Ave.Turn left onto Fenton St.4801 FENTON ST is on the left.")
+    end
   end
 end
-
-# As a user
-# When I visit "/"
-# And I select "The Noshery" or "Griffin Coffee" form the start location drop down (Note: Use the existing search form)
-# And I click "Find Nearest Station"
-# Then I should be on page "/search"
-# Then I should see the closest electric fuel station to me.
-# For that station I should see
-# - Name
-# - Address
-# - Fuel Type
-# - Access Times
-# I should also see:
-# - the distance of the nearest station
-# - the travel time from my starting location to that fuel station
-# - The direction instructions to get to that fuel station
-#   ex: ".... Turn left onto Lowell,  Destination will be on the right"
