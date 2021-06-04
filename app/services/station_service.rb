@@ -5,6 +5,7 @@ class StationService < BaseService
       f.params['location'] = location
       f.params['api_key'] = ENV['station_key']
     end
-    format_json(response)
+    json = format_json(response)
+    json[:fuel_stations]
   end
 end
