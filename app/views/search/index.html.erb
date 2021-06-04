@@ -1,4 +1,4 @@
-Station name: <%=  @station[:station_name] %><br>
-Address: <%=  @station[:street_address] %>, <%= @station[:city]%> <%=@station[:state]%> <%=@station[:zip] %><br>
-Fuel type: <%=  @station[:fuel_type_code] %><br>
-Access times: <%= @station[:access_days_time] %>
+Station name: <%=  @station.name %><br>
+Address: <%=  @station.full_address %><br>
+Fuel type: <%=  @station.fuel_type %><br>
+Access times: <%= @station.access_time %>
