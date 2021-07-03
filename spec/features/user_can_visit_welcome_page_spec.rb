@@ -8,7 +8,7 @@ describe "user can visit the welcome page" do
     expect(page).to have_button("Find Nearest Station")
   end
 
-  scenario "from dropdown, selects station, clicks find nearest station, and redirects" do
+  scenario "from dropdown, selects station, clicks find nearest station, and redirects", :vcr do
     visit '/'
     select "The Noshery", :from => "location"
     click_button("Find Nearest Station")
