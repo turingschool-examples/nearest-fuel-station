@@ -7,4 +7,11 @@ describe "user can visit the welcome page" do
     expect(page).to have_content("Search For The Nearest Electric Charging Station")
     expect(page).to have_button("Find Nearest Station")
   end
+
+  scenario "from dropdown, selects station, clicks find nearest station, and redirects", :vcr do
+    visit '/'
+    select "The Noshery", :from => "location"
+    click_button("Find Nearest Station")
+    expect(current_path).to eq("/search")
+  end
 end
