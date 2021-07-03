@@ -13,7 +13,5 @@ describe "user can visit the welcome page" do
     select "The Noshery", :from => "location"
     click_button("Find Nearest Station")
     expect(current_path).to eq("/search")
-    # Then I should see the closest electric fuel station to me.
-    # For that station I should see
   end
 end
