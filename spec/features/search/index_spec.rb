@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Search Index Page' do
+RSpec.describe 'Search Index Page', :vcr do
   before(:each) do 
     visit root_path
     select "Turing", :from => "location"
