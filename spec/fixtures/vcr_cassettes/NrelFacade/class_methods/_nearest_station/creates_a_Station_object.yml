@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=<nrel_key>&limit=1&location=1331%2017th%20St,%20Denver,%20CO%2080202
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 17 Apr 2022 21:04:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      - Origin
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '991'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      Last-Modified:
+      - Sun, 17 Apr 2022 21:04:03 GMT
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bb6ab153855ef7102b841717d28cd1e0
+      X-Runtime:
+      - '0.012170'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      - max-age=31536000; preload
+      Age:
+      - '0'
+      Via:
+      - https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"latitude":39.750614,"longitude":-104.996775,"location_country":"US","precision":{"value":9,"name":"premise","types":["premise"]},"station_locator_url":"https://afdc.energy.gov/stations/","total_results":211,"station_counts":{"total":476,"fuels":{"BD":{"total":0},"E85":{"total":2},"ELEC":{"total":468,"stations":{"total":203}},"HY":{"total":0},"LNG":{"total":0},"CNG":{"total":1},"LPG":{"total":5}}},"offset":0,"fuel_stations":[{"access_code":"public","access_days_time":"MO:
+        Not Specified; TU: Not Specified; WE: Not Specified; TH: Not Specified; FR:
+        Not Specified; SA: Not Specified; SU: Not Specified","access_detail_code":null,"cards_accepted":null,"date_last_confirmed":"2022-04-17","expected_date":null,"fuel_type_code":"ELEC","groups_with_access_code":"Public","id":212679,"open_date":"2022-03-25","owner_type_code":null,"status_code":"E","station_name":"CBRE
+        As Agent for EQC Operating Trust","station_phone":"800-663-5633","updated_at":"2022-04-17T00:22:53Z","facility_type":null,"geocode_status":"GPS","latitude":39.7502666,"longitude":-104.9951694,"city":"Denver","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1225
+        17th Street, Suite 130","zip":"80202","country":"US","bd_blends":null,"cng_dispenser_num":null,"cng_fill_type_code":null,"cng_psi":null,"cng_renewable_source":null,"cng_total_compression":null,"cng_total_storage":null,"cng_vehicle_class":null,"e85_blender_pump":null,"e85_other_ethanol_blends":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"SemaCharge
+        Network","ev_network_web":"https://semaconnect.com/","ev_other_evse":null,"ev_pricing":"$2.00-$4.00/Hr
+        Variable Parking Fee","ev_renewable_source":null,"hy_is_retail":null,"hy_pressures":null,"hy_standards":null,"hy_status_link":null,"lng_renewable_source":null,"lng_vehicle_class":null,"lpg_primary":null,"lpg_nozzle_types":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"access_days_time_fr":null,"intersection_directions_fr":null,"bd_blends_fr":null,"groups_with_access_code_fr":"Public","ev_pricing_fr":null,"ev_network_ids":{"station":["5965"],"posts":["2642","2643"]},"distance":0.0888,"distance_km":0.14291}]}'
+  recorded_at: Sun, 17 Apr 2022 21:04:03 GMT
+recorded_with: VCR 6.1.0
