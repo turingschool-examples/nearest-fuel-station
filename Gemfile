@@ -19,6 +19,7 @@ gem 'bootsnap'
 group :development, :test do
   gem 'pry'
   gem 'figaro'
+  gem 'faraday'
 end
 
 group :test do
@@ -27,6 +28,7 @@ group :test do
   gem 'launchy'
   gem 'vcr'
   gem 'webmock'
+  gem 'simplecov'
 end
 
 group :development do

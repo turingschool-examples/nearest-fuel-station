@@ -1,0 +1,44 @@
+<h1>Closest Fuel Station</h1>
+
+<div id='station'>
+  <h3>Station Info</h3>
+<ul>
+  <li>
+    <b> Name: <%= @station.name %> </b>
+  </li>
+  <li>
+    Address: <%= @station.address %>
+  </li>
+  <li>
+    Fuel Type: <%= @station.fuel_type %>
+  </li>
+  <li>
+    Access Times: <%= @station.access_times %>
+  </li>
+</ul>
+</div>
+
+<div id='route'>
+  <h3>Route Info</h3>
+  <ul>
+    <li>
+      Starting Address: <%= @start_address %>
+    </li>
+    <li>
+      <%= "Distance to station: #{@route.distance.round(2)} miles" %>
+    </li>
+    <li>
+      Travel Time: <%= @route.travel_time %> seconds
+    </li>
+    <li>
+      Directions: 
+      <ol>
+      <% @route.directions.each do |direction| %>
+        <li>
+          <%= direction %>
+        </li>
+      <% end  %>
+      </ol>
+    </li>
+  </ul>
+</div>
