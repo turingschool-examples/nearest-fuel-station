@@ -1,0 +1,15 @@
+<h1>Results:</h1>
+
+<h3>Name: <%= @station.name %></h3>
+<h3>Address <%= @station.address %></h3>
+<h3>Fuel Type: <%= @station.fuel_type %></h3>
+<h3>Access Times: <%= @station.access_times %></h3>
+
+<h3>Route Info</h3>
+<hr>
+<h4>Starting Address: <%= @start_address %></h4>
+<h4>Distance to Station: <%= @route.distance.round(2) %> miles</h4>
+<h4>Travel Time: <%= @route.travel_time %></h4>
+<h4>Directions: <% @route.directions.each do |direction| %></h4>
+                  <h4><%= direction %></h4>
+                <% end %>

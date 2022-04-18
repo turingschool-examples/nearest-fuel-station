@@ -19,6 +19,7 @@ gem 'bootsnap'
 group :development, :test do
   gem 'pry'
   gem 'figaro'
+  gem 'faraday'
 end
 
 group :test do
