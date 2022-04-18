@@ -9,6 +9,7 @@ RSpec.describe "Mapquest Service" do
       data = MapquestService.route(start_address, end_address)
 
       distance    = data[:route][:distance]
+      require "pry"; binding.pry
       # travel_time = data
 
     end
