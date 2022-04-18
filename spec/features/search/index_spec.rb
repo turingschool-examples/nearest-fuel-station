@@ -4,7 +4,7 @@ RSpec.describe 'Search Index Page' do
 
   it "exists" do
     visit '/'
-    expect(page).to have_content('Find Nearest Station')
+    expect(page).to have_button('Find Nearest Station')
   end
 
   it "when a user selects Turing from the drop down, and clicks Find Nearest Station, they are redirected to /search" do
