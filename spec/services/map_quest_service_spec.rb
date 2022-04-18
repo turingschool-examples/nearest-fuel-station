@@ -13,7 +13,6 @@ RSpec.describe "Mapquest Service" do
 
       expect(distance).to eq(0.081)
       expect(time_seconds).to eq("00:00:18")
-      # require "pry"; binding.pry
     end
   end
 end
