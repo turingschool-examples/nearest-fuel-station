@@ -1,1 +1,8 @@
 <h1>Stations near <%= @location %></h1>
+
+<% @station_info.each do |info| %>
+<p><b>Station Name: </b> <%= info.name %></p>
+<p><b>Station Address: </b> <%= info.address %></p>
+<p><b>Station Fuel Type: </b> <%= info.fuel_type %></p>
+<p><b>Station Access Times: </b> <%= info.availability %></p>
+<% end %>
