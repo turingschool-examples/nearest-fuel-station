@@ -15,4 +15,12 @@ RSpec.describe 'Search Index Page' do
     expect(current_path).to eq('/search')
 
   end
+
+  it "should render the closest station with its distance, travel time, and directions" do
+    visit '/'
+    select "Turing", :from => "location"
+    click_button 'Find Nearest Station'
+
+    # expect(page).to have_content
+  end
 end
