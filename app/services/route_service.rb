@@ -6,7 +6,7 @@ class RouteService
   end
 
   def self.directions(to, from)
-    response = conn.get("/directions/v2/route?to=#{to}&from=#{from}")
+    response = conn.get("/directions/v2/route?from=#{from}&to=#{to}")
     JSON.parse(response.body, symbolize_names: true)
   end
 end
