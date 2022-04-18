@@ -1,19 +1,21 @@
 <h1>Closest route</h1>
 
-<% @stations.each do |station| %>
-  <ul class="station" %>
-    <p class="name">Name: <%= station.name %></p>
-    <p class="address">Address: <%= station.address %></p>
-    <p class="fuel type">Fuel Type: <br><%= station.fuel_type %></p>
-    <p class="access time">Access Times: <br><%= station.access_time %></p>
-  </ul>
-<% end %>
 
-<% @routes.each do |route| %>
-  <ul class="route" %>
-    <p class="distance">Distance: <%= route.distance %></p>
-    <p class="travel time">Travel Time: <%= route.travel_time %></p>
-    <p class="directions">Directions: <br><%= route.directions%></p>
+  <ul>
+    <p class="name">Name: <%= @station.name %></p>
+    <p class="address">Address: <%= @station.address %></p>
+    <p class="fuel type">Fuel Type: <br><%= @station.fuel_type %></p>
+    <p class="access time">Access Times: <br><%= @station.access_time %></p>
   </ul>
-<% end %>
-    <hr>
+  <ul>
+    <p class="distance">Distance: <%= @route.distance %></p>
+    <p class="travel time">Travel Time: <%= @route.travel_time %></p>
+    <p class="directions">Directions: <br><% @route.directions.each do |turn| %>
+                                              <%= turn %></p>
+                                        <% end %>
+  </ul>
+
+
+
+<hr>
+
