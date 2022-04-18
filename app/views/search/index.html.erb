@@ -1,0 +1,18 @@
+<h1>Closest Fuel Station</h1>
+<hr>
+
+<section id="station-info">
+  <h3>Name: <%= @fuel_station.name %></h3>
+  <li>Address: <%= @fuel_station.address %></li>
+    <li>Fuel Type: <%= @fuel_station.fuel_type %></li>
+    <li>Access Times: <%= @fuel_station.access_times %></li>
+</section>
+
+<section id="travel-info">
+<h3>Directions: </h3>
+  <p>Distance: <%= @fuel_station.distance %> miles away</p>
+  <p>Travel Time: <%= @directions.travel_time %></p>
+  <p>Instructions: <% @directions.instructions.each do |instruction| %></p>
+  <li> <%= instruction %>  </li>
+  <% end %>
+</section>
