@@ -1,0 +1,12 @@
+<%= @station.name %>
+<%= @station.address %>
+<%= @station.fuel_type %>
+<%= @station.open%><br>
+
+Distance: <%= @route.distance %><br>
+ETA: <%= @route.eta %><br>
+<% #binding.pry  %>
+
+<% @route.parsed_directions.each do |directions|%>
+  <%=directions%>
+<%end %>
