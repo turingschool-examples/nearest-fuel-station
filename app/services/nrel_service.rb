@@ -11,7 +11,5 @@ class NrelService
   def self.nearest_station(address)
     response = conn.get("/api/alt-fuel-stations/v1/nearest.json?location=#{address}")
     json = JSON.parse(response.body, symbolize_names: true)
-    require "pry"; binding.pry
   end
-
 end
