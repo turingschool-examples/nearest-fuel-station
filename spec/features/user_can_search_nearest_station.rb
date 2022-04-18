@@ -14,4 +14,16 @@ RSpec.describe 'Search Method' do
     expect(page).to have_content("Station Fuel Type:")
     expect(page).to have_content("Station Access Times:")
   end
+
+  it "can show directions and info to nearest station" do
+    visit '/'
+
+    select("Turing")
+
+    click_button("Find Nearest Station")
+
+    expect(page).to have_content("Distance to Station:")
+    expect(page).to have_content("Travel Time:")
+    expect(page).to have_content("Directions:")
+  end
 end

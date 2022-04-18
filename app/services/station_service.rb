@@ -1,7 +1,7 @@
 class StationService
 
   def self.conn
-    Faraday.new(url: "https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json")
+    Faraday.new(url: "https://developer.nrel.gov")
   end
 
   def self.get_url(url)
