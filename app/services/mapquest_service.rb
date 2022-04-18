@@ -7,7 +7,8 @@ class MapquestService
     end
   end
 
-  def self.route(start, end)
-    response = conn.get("/directions/v2/route?from=#{start}&to=#{end}")
+  def self.route(start_address, end_address)
+    response = conn.get("/directions/v2/route?from=#{start_address}&to=#{end_address}")
     json = JSON.parse(response.body, symbolize_names: true)
   end
+end

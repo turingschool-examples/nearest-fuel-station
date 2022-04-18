@@ -8,11 +8,12 @@ RSpec.describe "Mapquest Service" do
 
       data = MapquestService.route(start_address, end_address)
 
-      distance    = data[:route][:distance]
-      require "pry"; binding.pry
-      # travel_time = data
+      distance     = data[:route][:distance]
+      time_seconds = data[:route][:formattedTime]
 
+      expect(distance).to eq(0.081)
+      expect(time_seconds).to eq("00:00:18")
+      # require "pry"; binding.pry
     end
   end
-
 end
