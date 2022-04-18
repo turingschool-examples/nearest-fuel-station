@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 ruby '2.7.4'
-
+gem 'faraday'
 gem 'rails', '~> 5.2.7'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.12'
