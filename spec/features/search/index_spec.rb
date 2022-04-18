@@ -13,5 +13,6 @@ RSpec.describe 'Search Index Page' do
     click_button 'Find Nearest Station'
 
     expect(current_path).to eq('/search')
+
   end
 end
