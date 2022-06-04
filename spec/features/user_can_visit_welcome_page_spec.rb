@@ -35,8 +35,8 @@ describe "user can visit the welcome page" do
     expect(page).to have_content('Fuel type: ELEC')
     expect(page).to have_content("Access times: MO: Not Specified; TU: Not Specified; WE: Not Specified; TH: Not Specified; FR: Not Specified; SA: Not Specified; SU: Not Specified")
 
-    expect(page).to have_content('Distance: 0.1 miles')
-    expect(page).to have_content('Travel time: 1 minute')
-    expect(page).to have_content('Directions: Turn left onto Lawrence St Destination will be on the left')
+    expect(page).to have_content('Distance: 0.081 miles')
+    expect(page).to have_content('Travel time: 18 seconds')
+    expect(page).to have_content('Start out going southeast on 17th St toward Larimer St/CO-33.')
   end
 end
