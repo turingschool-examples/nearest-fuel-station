@@ -27,9 +27,7 @@ describe "user can visit the welcome page" do
   #   "Turn left onto Lawrence St Destination will be on the left"
   scenario "and it displays closest fuel station, info & directions " do
     visit "/"
-    within "#location_options" do
-      select('Turng')
-    end
+    select('Turing')
     click_on "Find Nearest Station"
     expect(current_path).to eq("/search")
     expect(page).to have_content('closest station name')
