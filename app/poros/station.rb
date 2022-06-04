@@ -5,6 +5,6 @@ class Station
     @name = data[:station_name]
     @address = data[:street_address]
     @fuel_type = data[:fuel_type_code]
-    @acces_times = data[:access_days_time]
+    @access_times = data[:access_days_time]
   end
 end

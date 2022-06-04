@@ -30,10 +30,10 @@ describe "user can visit the welcome page" do
     select('Turing')
     click_on "Find Nearest Station"
     expect(current_path).to eq("/search")
-    expect(page).to have_content('closest station name')
-    expect(page).to have_content('address')
-    expect(page).to have_content('fuel type')
-    expect(page).to have_content('access times')
+    expect(page).to have_content('Name: CBRE As Agent for EQC Operating Trust')
+    expect(page).to have_content('Address: 1225 17th Street, Suite 130')
+    expect(page).to have_content('Fuel type: ELEC')
+    expect(page).to have_content("Access times: MO: Not Specified; TU: Not Specified; WE: Not Specified; TH: Not Specified; FR: Not Specified; SA: Not Specified; SU: Not Specified")
 
     expect(page).to have_content('Distance: 0.1 miles')
     expect(page).to have_content('Travel time: 1 minute')
