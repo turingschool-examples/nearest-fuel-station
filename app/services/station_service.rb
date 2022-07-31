@@ -1,4 +1,4 @@
-class NrelService
+class StationService
   def self.conn
     url = "https://developer.nrel.gov"
     Faraday.new(url: url)
@@ -13,6 +13,6 @@ class NrelService
       f.params[:api_key] = ENV['nrel_api_key']
       f.params[:location] = params[:location]
     end
-    NrelService.get_json(response)
+    StationService.get_json(response)
   end
 end
