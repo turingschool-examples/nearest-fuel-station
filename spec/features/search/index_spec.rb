@@ -8,5 +8,8 @@ RSpec.describe 'Search Index' do
     click_on 'Find Nearest Station'
 
     expect(current_path).to eq('/search')
+    expect(page).to have_content('1550 Market St')
+    expect(page).to have_content('ELEC')
+    expect(page).to have_content('24 hours daily')
   end
 end
