@@ -11,6 +11,5 @@ RSpec.describe MapQuestService do
     expect(direction_data[:route]).to have_key(:distance)
     expect(direction_data[:route]).to have_key(:formattedTime)
     expect(direction_data[:route][:legs].first).to have_key(:maneuvers)
-
   end
 end
