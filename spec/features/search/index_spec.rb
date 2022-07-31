@@ -11,5 +11,6 @@ RSpec.describe 'Search Index' do
     expect(page).to have_content('1550 Market St')
     expect(page).to have_content('ELEC')
     expect(page).to have_content('24 hours daily')
+    expect(page).to have_content('00:01:00')
   end
 end
