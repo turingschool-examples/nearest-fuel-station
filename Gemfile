@@ -15,6 +15,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap'
+gem 'faraday'
+gem 'faker'
 
 group :development, :test do
   gem 'pry'
@@ -22,10 +24,14 @@ group :development, :test do
 end
 
 group :test do
+  gem 'shoulda-matchers'
   gem 'rspec-rails'
   gem 'capybara'
-  gem 'launchy'
+  gem 'factory_bot_rails'
+  gem 'launchy' # save_and_open_page
   gem 'vcr'
+  gem 'orderly'
+  gem 'simplecov'
   gem 'webmock'
 end
 

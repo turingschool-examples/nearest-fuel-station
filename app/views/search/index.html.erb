@@ -1,0 +1,19 @@
+<h1>Closest Station to <%= params[:location] %></h1>
+
+<div id='closest-station-info'>
+  <h3><%= @closest_station.name %></h3>
+  <p><strong>Address: </strong><%= @closest_station.concat_address %></p>
+  <p><strong>Fuel Type: </strong><%= @closest_station.fuel_type.capitalize %></p>
+  <p><strong>Access Times: </strong><%= @closest_station.access_times %></p>
+  <p><strong>Distance From <%= params[:location] %>: </strong><%= @closest_station.distance_miles.round(1) %> miles</p>
+</div>
+
+<div id='directions-info'>
+  <p><strong>Time to Destination: </strong><%= @directions.time_to_destination %></p>
+  <p><strong>Directions: </strong><br>
+    <% @directions.directions_array.each do |step| %>
+      <%= step %>
+      <br>
+    <% end %>
+  </p>
+</div>

@@ -1,0 +1,166 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/blake/turing/3module/practice/nearest-fuel-station/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/blake/turing/3module/practice/nearest-fuel-station/app/controllers/welcome_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/blake/turing/3module/practice/nearest-fuel-station/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/blake/turing/3module/practice/nearest-fuel-station/app/controllers/search_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/blake/turing/3module/practice/nearest-fuel-station/app/facades/fuel_station_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/blake/turing/3module/practice/nearest-fuel-station/app/services/fuel_station_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/blake/turing/3module/practice/nearest-fuel-station/app/poros/fuel_station.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/blake/turing/3module/practice/nearest-fuel-station/app/facades/directions_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/blake/turing/3module/practice/nearest-fuel-station/app/services/directions_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/blake/turing/3module/practice/nearest-fuel-station/app/poros/directions.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          2,
+          2,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/blake/turing/3module/practice/nearest-fuel-station/app/models/application_record.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1663366971
+  }
+}
