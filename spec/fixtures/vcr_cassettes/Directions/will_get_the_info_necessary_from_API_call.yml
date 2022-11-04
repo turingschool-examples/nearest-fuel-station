@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/directions/v2/route?from=1331%2017th%20St%20LL100,%20Denver,%20CO%2080202&key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&to=39.750284,-104.995227
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Fri, 04 Nov 2022 23:15:36 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '6354'
+      Set-Cookie:
+      - JSESSIONID=466A1813B4F231EDF5B7DFF59939D453; Path=/directions; HttpOnly
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Last-Modified:
+      - Fri, 04 Nov 2022 23:15:36 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      X-Vz-Migration-Api:
+      - 'false'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '{"route":{"hasTollRoad":false,"hasBridge":false,"boundingBox":{"lr":{"lng":-104.994141,"lat":39.749493},"ul":{"lng":-104.996773,"lat":39.75108}},"distance":0.303,"hasTimedRestriction":false,"hasTunnel":false,"hasHighway":false,"computedWaypoints":[],"routeError":{"errorCode":-400,"message":""},"formattedTime":"00:01:02","sessionId":"63659d18-0133-5f21-02b4-39ce-02b527b3545b","hasAccessRestriction":false,"realTime":83,"hasSeasonalClosure":false,"hasCountryCross":false,"fuelUsed":0.03,"legs":[{"hasTollRoad":false,"hasBridge":false,"destNarrative":"","distance":0.303,"hasTimedRestriction":false,"hasTunnel":false,"hasHighway":false,"index":0,"formattedTime":"00:01:02","origIndex":1,"hasAccessRestriction":false,"hasSeasonalClosure":false,"hasCountryCross":false,"roadGradeStrategy":[[]],"destIndex":-1,"time":62,"hasUnpaved":false,"origNarrative":"Go
+        northeast on Lawrence St/CO-33.","maneuvers":[{"distance":0.108,"streets":["17th
+        St"],"narrative":"Start out going southeast on 17th St toward Larimer St/CO-33.","turnType":6,"startPoint":{"lng":-104.996773,"lat":39.75061},"index":0,"formattedTime":"00:00:26","directionName":"Southeast","maneuverNotes":[],"linkIds":[],"signs":[],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=39.7506103515625,-104.99677276611328|marker-1||39.74949264526367,-104.995361328125|marker-2||&center=39.750051498413086,-104.99606704711914&defaultMarker=none&zoom=13&rand=1803930610&session=63659d18-0133-5f21-02b4-39ce-02b527b3545b","transportMode":"AUTO","attributes":0,"time":26,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif","direction":5},{"distance":0.092,"streets":["Lawrence
+        St","CO-33"],"narrative":"Turn left onto Lawrence St/CO-33.","turnType":6,"startPoint":{"lng":-104.995361,"lat":39.749493},"index":1,"formattedTime":"00:00:15","directionName":"Northeast","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"33","type":505,"url":"http://icons.mqcdn.com/icons/rs505.png?n=33","direction":0}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=39.74949264526367,-104.995361328125|marker-2||39.750431060791016,-104.994140625|marker-3||&center=39.749961853027344,-104.9947509765625&defaultMarker=none&zoom=14&rand=1803930610&session=63659d18-0133-5f21-02b4-39ce-02b527b3545b","transportMode":"AUTO","attributes":0,"time":15,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif","direction":3},{"distance":0.065,"streets":["18th
+        St"],"narrative":"Turn left onto 18th St.","turnType":6,"startPoint":{"lng":-104.994141,"lat":39.750431},"index":2,"formattedTime":"00:00:15","directionName":"Northwest","maneuverNotes":[],"linkIds":[],"signs":[],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=39.750431060791016,-104.994140625|marker-3||39.75107955932617,-104.9950180053711|marker-4||&center=39.750755310058594,-104.99457931518555&defaultMarker=none&zoom=14&rand=1803930610&session=63659d18-0133-5f21-02b4-39ce-02b527b3545b","transportMode":"AUTO","attributes":0,"time":15,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif","direction":2},{"distance":0.038,"streets":["Larimer
+        St","CO-33"],"narrative":"Turn left onto Larimer St/CO-33.","turnType":6,"startPoint":{"lng":-104.995018,"lat":39.75108},"index":3,"formattedTime":"00:00:06","directionName":"Southwest","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"33","type":505,"url":"http://icons.mqcdn.com/icons/rs505.png?n=33","direction":0}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=39.75107955932617,-104.9950180053711|marker-4||39.75068664550781,-104.99552917480469|marker-5||&center=39.75088310241699,-104.99527359008789&defaultMarker=none&zoom=15&rand=1803930610&session=63659d18-0133-5f21-02b4-39ce-02b527b3545b","transportMode":"AUTO","attributes":0,"time":6,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif","direction":6},{"distance":0,"streets":[],"narrative":"1772
+        LARIMER ST is on the left.","turnType":-1,"startPoint":{"lng":-104.995529,"lat":39.750687},"index":4,"formattedTime":"00:00:00","directionName":"","maneuverNotes":[],"linkIds":[],"signs":[],"transportMode":"AUTO","attributes":0,"time":0,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-end_sm.gif","direction":0}],"hasFerry":false}],"options":{"arteryWeights":[],"cyclingRoadFactor":1,"timeType":0,"useTraffic":false,"returnLinkDirections":false,"countryBoundaryDisplay":true,"enhancedNarrative":false,"locale":"en_US","tryAvoidLinkIds":[],"drivingStyle":2,"doReverseGeocode":true,"generalize":-1,"mustAvoidLinkIds":[],"sideOfStreetDisplay":true,"routeType":"FASTEST","avoidTimedConditions":false,"routeNumber":0,"shapeFormat":"raw","maxWalkingDistance":-1,"destinationManeuverDisplay":true,"transferPenalty":-1,"narrativeType":"text","walkingSpeed":-1,"urbanAvoidFactor":-1,"stateBoundaryDisplay":true,"unit":"M","highwayEfficiency":22,"maxLinkId":0,"maneuverPenalty":-1,"avoidTripIds":[],"filterZoneFactor":-1,"manmaps":"true"},"locations":[{"dragPoint":false,"displayLatLng":{"lng":-104.996773,"lat":39.750614},"adminArea4":"Denver","adminArea5":"Denver","postalCode":"80202-1507","adminArea1":"US","adminArea3":"CO","type":"s","sideOfStreet":"R","geocodeQualityCode":"P1AAA","adminArea4Type":"County","linkId":12471326,"street":"1331
+        17th St","adminArea5Type":"City","geocodeQuality":"POINT","adminArea1Type":"Country","adminArea3Type":"State","latLng":{"lng":-104.996775,"lat":39.750614}},{"dragPoint":false,"displayLatLng":{"lng":-104.995227,"lat":39.750284},"adminArea4":"Denver","adminArea5":"Denver","postalCode":"80202","adminArea1":"US","adminArea3":"CO","type":"s","sideOfStreet":"R","geocodeQualityCode":"L1AAA","adminArea4Type":"County","linkId":11503176,"street":"1772
+        Larimer St","adminArea5Type":"City","geocodeQuality":"ADDRESS","adminArea1Type":"Country","adminArea3Type":"State","latLng":{"lng":-104.995227,"lat":39.750284}}],"time":62,"hasUnpaved":false,"locationSequence":[0,1],"hasFerry":false},"info":{"statuscode":0,"copyright":{"imageAltText":"©
+        2022 MapQuest, Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","text":"©
+        2022 MapQuest, Inc."},"messages":[]}}'
+  recorded_at: Fri, 04 Nov 2022 23:15:36 GMT
+recorded_with: VCR 6.1.0

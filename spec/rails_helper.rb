@@ -43,7 +43,7 @@ RSpec.configure do |config|
 
   # You can uncomment this line to turn off ActiveRecord support entirely.
   # config.use_active_record = false
-
+  config.include FactoryBot::Syntax::Methods
   # RSpec Rails can automatically mix in different behaviours to your tests
   # based on their file location, for example enabling you to call `get` and
   # `post` in specs under `spec/controllers`.
@@ -63,4 +63,23 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+end
+
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
+  end
+end
+
+VCR.configure do |config|
+  config.before_record do |i|
+    i.response.body.force_encoding('UTF-8')
+  end
+  config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+  config.hook_into :webmock
+  config.filter_sensitive_data('<API Key>') { ENV['name_api_key'] } #name_api_key from config/application.yml
+  config.configure_rspec_metadata!
+  config.default_cassette_options = { re_record_interval: 30.days }
+  config.allow_http_connections_when_no_cassette = true
 end
