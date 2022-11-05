@@ -1,1 +1,8 @@
-<h1>search page </h1>
+<h1>search results page </h1>
+
+<div id='nearest_station'>
+<p> Address: <%= @nearest_elec_station.first.street_address %></p>
+<p> Name of Station:<%= @nearest_elec_station.first.station_name %></p>
+<p> Fuel Type: <%= @nearest_elec_station.first.fuel_type %></p>
+<p> Hours of Operation: <%= @nearest_elec_station.first.hours_of_operation %></p>
+</div>
