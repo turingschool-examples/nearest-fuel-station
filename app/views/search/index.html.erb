@@ -6,5 +6,10 @@
 <p> Fuel Type: <%= @nearest_elec_station.first.fuel_type %></p>
 <p> Hours of Operation: <%= @nearest_elec_station.first.hours_of_operation %></p>
 <p> Distance to Station: <%= @directions_information.first %> miles away</p>
+</div>
 
+<div id='directions_list'>
+<p> Directions to Station: <% @directions_information.second[0].directions_list.each do |direction| %></p>
+<%= direction %>
+<% end %>
 </div>

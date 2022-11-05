@@ -27,11 +27,11 @@ RSpec.describe 'search page', type: :feature do
         end
       end
 
-      xit 'I should also see and direction instructions to get to that fuel station ' do #  "Turn left onto Lawrence St Destination will be on the left"
-        expect(page).to have_content("Start out going southwest on Blake St toward 15th St.")
-        expect(page).to have_content("Turn left onto 14th St.")
-        expect(page).to have_content("Turn left.")
-        expect(page).to have_content("Turn left onto 15th St.")
+      it 'I should also see and direction instructions to get to that fuel station ' do #  "Turn left onto Lawrence St Destination will be on the left"
+        save_and_open_page
+        expect(page).to have_content("Start out going southeast on 17th St toward Larimer St/CO-33")
+        expect(page).to have_content("Turn right onto Tremont Pl.")
+        expect(page).to have_content("Turn right onto 15th St.")
         expect(page).to have_content("400 15TH ST is on the left.")
       end
 
