@@ -4,7 +4,7 @@
 <p>Address: <%= @station.address %></p>
 <p>Fuel Type: <%= @station.fuel_type %></p>
 <p> Access Times: <%= @station.hours %></p>
-<p>Distance: </p>
-<p>Travel Time: </p>
-<p>Directions: </p></li>
+<p>Distance: <%= @travel_info.distance %> </p>
+<p>Travel Time: <%= @travel_info.travel_time %></p>
+<p>Directions: <%= @travel_info.directions %></p></li>
 </ul>
