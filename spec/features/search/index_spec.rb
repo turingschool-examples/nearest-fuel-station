@@ -34,11 +34,11 @@ RSpec.describe 'search for nearest charging station' do
     @directions = DirectionsFacade.get_directions("1331 17th St LL100, Denver, CO 80202", @station.lat, @station.long)
     # I should also see:
     # - the distance of the nearest station (should be 0.1 miles)
-    # expect(page).to have_content(@directions.distance)
+    expect(page).to have_content(@directions.distance)
     # # - the travel time from Turing to that fuel station (should be 1 min)
-    # expect(page).to have_content(@directions.time)
+    expect(page).to have_content(@directions.time)
     # # - The direction instructions to get to that fuel station
-    # expect(page).to have_content(@directions.directions)
+    expect(page).to have_content(@directions.directions)
     #   "Turn left onto Lawrence St Destination will be on the left"
   end
 

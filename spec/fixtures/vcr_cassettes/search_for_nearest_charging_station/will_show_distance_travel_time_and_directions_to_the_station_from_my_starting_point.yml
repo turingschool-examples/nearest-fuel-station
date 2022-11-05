@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 04 Nov 2022 23:15:35 GMT
+      - Sat, 05 Nov 2022 15:53:42 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -33,189 +33,11 @@ http_interactions:
       Access-Control-Max-Age:
       - '86400'
       Age:
-      - '0'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Last-Modified:
-      - Fri, 04 Nov 2022 23:15:35 GMT
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains; preload
-      - max-age=31536000; preload
-      Vary:
-      - Accept-Encoding
-      - Accept-Encoding,Origin
-      Via:
-      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
-      X-Cache:
-      - MISS
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      X-Ratelimit-Limit:
-      - '1000'
-      X-Ratelimit-Remaining:
-      - '933'
-      X-Request-Id:
-      - df8fe338a837956e88527a2e6bcd2195
-      X-Runtime:
-      - '0.013512'
-      X-Vcap-Request-Id:
-      - cc324def-319f-4168-7636-7304b7a580cd
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Frame-Options:
-      - SAMEORIGIN
-    body:
-      encoding: UTF-8
-      string: '{"latitude":39.75055,"longitude":-104.99673,"location_country":"US","precision":{"value":8,"name":"address","types":["street_address"]},"station_locator_url":"https://afdc.energy.gov/stations/","total_results":239,"station_counts":{"total":540,"fuels":{"BD":{"total":0},"E85":{"total":2},"ELEC":{"total":532,"stations":{"total":231}},"HY":{"total":0},"LNG":{"total":0},"CNG":{"total":1},"LPG":{"total":5}}},"offset":0,"fuel_stations":[{"access_code":"public","access_days_time":"24
-        hours daily","access_detail_code":null,"cards_accepted":null,"date_last_confirmed":"2022-11-04","expected_date":null,"fuel_type_code":"ELEC","groups_with_access_code":"Public","id":233490,"open_date":"2022-10-14","owner_type_code":null,"status_code":"E","restricted_access":null,"station_name":"17TH
-        ST PLAZA P1 EV STATION","station_phone":"888-758-4389","updated_at":"2022-11-04T01:44:34Z","facility_type":null,"geocode_status":"GPS","latitude":39.750284,"longitude":-104.995227,"city":"Denver","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1225
-        17th St","zip":"80202","country":"US","bd_blends":null,"cng_dispenser_num":null,"cng_fill_type_code":null,"cng_psi":null,"cng_renewable_source":null,"cng_total_compression":null,"cng_total_storage":null,"cng_vehicle_class":null,"e85_blender_pump":null,"e85_other_ethanol_blends":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
-        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"ev_pricing":null,"ev_renewable_source":null,"hy_is_retail":null,"hy_pressures":null,"hy_standards":null,"hy_status_link":null,"lng_renewable_source":null,"lng_vehicle_class":null,"lpg_primary":null,"lpg_nozzle_types":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"access_days_time_fr":null,"intersection_directions_fr":null,"bd_blends_fr":null,"groups_with_access_code_fr":"Public","ev_pricing_fr":null,"ev_network_ids":{"station":["USCPIL13129851"],"posts":["22450591","22450601"]},"distance":0.08212,"distance_km":0.13216}]}'
-  recorded_at: Fri, 04 Nov 2022 23:15:35 GMT
-- request:
-    method: get
-    uri: http://www.mapquestapi.com/directions/v2/route?from=1225%2017th%20St&key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&to=39.750284,-104.995227
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.6.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: ''
-    headers:
-      Date:
-      - Fri, 04 Nov 2022 23:15:35 GMT
-      Content-Type:
-      - application/json;charset=UTF-8
-      Transfer-Encoding:
-      - chunked
-      Set-Cookie:
-      - JSESSIONID=043A45049545442AE554D1B472571978; Path=/directions; HttpOnly
-      Expires:
-      - Mon, 20 Dec 1998 01:00:00 GMT
-      Last-Modified:
-      - Fri, 04 Nov 2022 23:15:35 GMT
-      Cache-Control:
-      - no-cache, must-revalidate
-      Pragma:
-      - no-cache
-      X-Vz-Migration-Api:
-      - 'false'
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - OPTIONS,GET,POST
-      Status:
-      - success
-      Transactionweight:
       - '1'
-    body:
-      encoding: UTF-8
-      string: '{"route":{"hasTollRoad":false,"hasBridge":true,"boundingBox":{"lr":{"lng":-104.989616,"lat":39.750687},"ul":{"lng":-115.372147,"lat":51.099564}},"distance":1153.0161,"hasTimedRestriction":false,"hasTunnel":false,"hasHighway":true,"computedWaypoints":[],"routeError":{"errorCode":-400,"message":""},"formattedTime":"16:43:46","sessionId":"63659d17-0208-5f21-02b4-39b3-0298ec050309","hasAccessRestriction":false,"realTime":66947,"hasSeasonalClosure":false,"hasCountryCross":true,"fuelUsed":60.79,"legs":[{"hasTollRoad":false,"hasBridge":true,"destNarrative":"Proceed
-        to 1772 LARIMER ST.","distance":1153.0161,"hasTimedRestriction":false,"hasTunnel":false,"hasHighway":true,"index":0,"formattedTime":"16:43:46","origIndex":6,"hasAccessRestriction":false,"hasSeasonalClosure":false,"hasCountryCross":true,"roadGradeStrategy":[[]],"destIndex":30,"time":60226,"hasUnpaved":false,"origNarrative":"Go
-        east on TC-1 E.","maneuvers":[{"distance":0.078,"streets":["17 St"],"narrative":"Start
-        out going east on 17 St toward 11 Ave.","turnType":2,"startPoint":{"lng":-115.372147,"lat":51.097168},"index":0,"formattedTime":"00:00:19","directionName":"East","maneuverNotes":[],"linkIds":[],"signs":[],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=51.09716796875,-115.37214660644531|marker-1||51.0975456237793,-115.37055969238281|marker-2||&center=51.09735679626465,-115.37135314941406&defaultMarker=none&zoom=15&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":0,"time":19,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif","direction":8},{"distance":0.208,"streets":["11
-        Ave"],"narrative":"Turn left onto 11 Ave.","turnType":6,"startPoint":{"lng":-115.37056,"lat":51.097546},"index":1,"formattedTime":"00:00:59","directionName":"Northwest","maneuverNotes":[],"linkIds":[],"signs":[],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=51.0975456237793,-115.37055969238281|marker-2||51.09956359863281,-115.3715591430664|marker-3||&center=51.098554611206055,-115.37105941772461&defaultMarker=none&zoom=12&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":0,"time":59,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif","direction":2},{"distance":0.268,"streets":["Larch
-        Ave"],"narrative":"Turn right onto Larch Ave.","turnType":2,"startPoint":{"lng":-115.371559,"lat":51.099564},"index":2,"formattedTime":"00:00:50","directionName":"Southeast","maneuverNotes":[],"linkIds":[],"signs":[],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=51.09956359863281,-115.3715591430664|marker-3||51.0971794128418,-115.36701965332031|marker-4||&center=51.098371505737305,-115.36928939819336&defaultMarker=none&zoom=12&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":0,"time":50,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif","direction":5},{"distance":0.329,"streets":["17
-        St"],"narrative":"Larch Ave becomes 17 St.","turnType":0,"startPoint":{"lng":-115.36702,"lat":51.097179},"index":3,"formattedTime":"00:00:53","directionName":"East","maneuverNotes":[],"linkIds":[],"signs":[],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=51.0971794128418,-115.36701965332031|marker-4||51.09703063964844,-115.3594970703125|marker-5||&center=51.09710502624512,-115.3632583618164&defaultMarker=none&zoom=11&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":0,"time":53,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif","direction":8},{"distance":0.9,"streets":["Railway
-        Ave"],"narrative":"Turn right onto Railway Ave.","turnType":2,"startPoint":{"lng":-115.359497,"lat":51.097031},"index":4,"formattedTime":"00:01:55","directionName":"Southeast","maneuverNotes":[],"linkIds":[],"signs":[],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=51.09703063964844,-115.3594970703125|marker-5||51.0882568359375,-115.3478012084961|marker-6||&center=51.09264373779297,-115.3536491394043&defaultMarker=none&zoom=10&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":0,"time":115,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif","direction":5},{"distance":0.122,"streets":["Benchlands
-        Trail"],"narrative":"Railway Ave becomes Benchlands Trail.","turnType":0,"startPoint":{"lng":-115.347801,"lat":51.088257},"index":5,"formattedTime":"00:00:16","directionName":"Northeast","maneuverNotes":[],"linkIds":[],"signs":[],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=51.0882568359375,-115.3478012084961|marker-6||51.08927917480469,-115.34552764892578|marker-7||&center=51.088768005371094,-115.34666442871094&defaultMarker=none&zoom=13&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":0,"time":16,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif","direction":3},{"distance":56.56,"streets":["TC-1
-        E"],"narrative":"Merge onto TC-1 E toward Calgary.","turnType":10,"startPoint":{"lng":-115.345528,"lat":51.089279},"index":6,"formattedTime":"00:52:27","directionName":"East","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"1","type":20,"url":"http://icons.mqcdn.com/icons/rs20.png?n=1&d=EAST","direction":8}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=51.08927917480469,-115.34552764892578|marker-7||51.081764221191406,-114.19548034667969|marker-8||&center=51.08552169799805,-114.77050399780273&defaultMarker=none&zoom=4&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":1152,"time":3147,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif","direction":8},{"distance":5.218,"streets":["Sarcee
-        Trail"],"narrative":"Merge onto Sarcee Trail toward AB-2 S.","turnType":10,"startPoint":{"lng":-114.19548,"lat":51.081764},"index":7,"formattedTime":"00:06:52","directionName":"South","maneuverNotes":[],"linkIds":[],"signs":[],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=51.081764221191406,-114.19548034667969|marker-8||51.01470184326172,-114.16606140136719|marker-9||&center=51.04823303222656,-114.18077087402344&defaultMarker=none&zoom=7&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":1024,"time":412,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif","direction":4},{"distance":1.378,"streets":["Glenmore
-        Trail"],"narrative":"Sarcee Trail becomes Glenmore Trail.","turnType":0,"startPoint":{"lng":-114.166061,"lat":51.014702},"index":8,"formattedTime":"00:01:51","directionName":"South","maneuverNotes":[],"linkIds":[],"signs":[],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=51.01470184326172,-114.16606140136719|marker-9||50.995323181152344,-114.16804504394531|marker-10||&center=51.00501251220703,-114.16705322265625&defaultMarker=none&zoom=9&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":1024,"time":111,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif","direction":4},{"distance":8.208,"streets":["Tsuut''ina
-        Trail"],"narrative":"Stay straight to go onto Tsuut''ina Trail.","turnType":0,"startPoint":{"lng":-114.168045,"lat":50.995323},"index":9,"formattedTime":"00:08:59","directionName":"South","maneuverNotes":[],"linkIds":[],"signs":[],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=50.995323181152344,-114.16804504394531|marker-10||50.893768310546875,-114.1051254272461|marker-11||&center=50.94454574584961,-114.1365852355957&defaultMarker=none&zoom=6&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":1024,"time":539,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif","direction":4},{"distance":1.78,"streets":["COWBOY
-        TRAIL","Spruce Meadows Trail","AB-22X"],"narrative":"Tsuut''ina Trail becomes
-        COWBOY TRAIL/Spruce Meadows Trail/AB-22X.","turnType":0,"startPoint":{"lng":-114.105125,"lat":50.893768},"index":10,"formattedTime":"00:02:31","directionName":"East","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"22X","type":22,"url":"http://icons.mqcdn.com/icons/rs22.png?n=22X","direction":0}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=50.893768310546875,-114.1051254272461|marker-11||50.89250564575195,-114.06456756591797|marker-12||&center=50.893136978149414,-114.08484649658203&defaultMarker=none&zoom=9&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":0,"time":151,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif","direction":8},{"distance":6.89,"streets":["Macleod
-        Trail","AB-2A"],"narrative":"Merge onto Macleod Trail/AB-2A.","turnType":10,"startPoint":{"lng":-114.064568,"lat":50.892506},"index":11,"formattedTime":"00:08:08","directionName":"Southeast","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"2A","type":22,"url":"http://icons.mqcdn.com/icons/rs22.png?n=2A","direction":0}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=50.89250564575195,-114.06456756591797|marker-12||50.810237884521484,-113.98194885253906|marker-13||&center=50.85137176513672,-114.02325820922852&defaultMarker=none&zoom=7&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":0,"time":488,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif","direction":5},{"distance":82.929,"streets":["AB-2
-        S"],"narrative":"Stay straight to go onto AB-2 S.","turnType":0,"startPoint":{"lng":-113.981949,"lat":50.810238},"index":12,"formattedTime":"01:17:34","directionName":"South","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"2","type":22,"url":"http://icons.mqcdn.com/icons/rs22.png?n=2&d=SOUTH","direction":4}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=50.810237884521484,-113.98194885253906|marker-13||49.71589279174805,-113.44688415527344|marker-14||&center=50.263065338134766,-113.71441650390625&defaultMarker=none&zoom=3&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":1152,"time":4654,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif","direction":4},{"distance":33.843,"streets":["AB-3
-        E"],"narrative":"Merge onto AB-3 E via the exit on the left toward Lethbridge/Fort
-        Macleod.","turnType":11,"startPoint":{"lng":-113.446884,"lat":49.715893},"index":13,"formattedTime":"00:34:31","directionName":"East","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"3","type":22,"url":"http://icons.mqcdn.com/icons/rs22.png?n=3&d=EAST","direction":8}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=49.71589279174805,-113.44688415527344|marker-14||49.69761657714844,-112.81129455566406|marker-15||&center=49.70675468444824,-113.12908935546875&defaultMarker=none&zoom=5&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":1152,"time":2071,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_merge_left_sm.gif","direction":8},{"distance":0.144,"streets":[],"narrative":"Take
-        the Mayor Magrath Dr S exit toward AB-4/AB-5.","turnType":14,"startPoint":{"lng":-112.811295,"lat":49.697617},"index":14,"formattedTime":"00:00:23","directionName":"Southeast","maneuverNotes":[],"linkIds":[],"signs":[],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=49.69761657714844,-112.81129455566406|marker-15||49.69639205932617,-112.81133270263672|marker-16||&center=49.697004318237305,-112.81131362915039&defaultMarker=none&zoom=13&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":0,"time":23,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_gr_exitright_sm.gif","direction":5},{"distance":2.002,"streets":["Mayor
-        Magrath Dr","Red Coat Trail","AB-4"],"narrative":"Turn left onto Mayor Magrath
-        Dr/Red Coat Trail/AB-4.","turnType":6,"startPoint":{"lng":-112.811333,"lat":49.696392},"index":15,"formattedTime":"00:03:48","directionName":"South","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"4","type":22,"url":"http://icons.mqcdn.com/icons/rs22.png?n=4","direction":0}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=49.69639205932617,-112.81133270263672|marker-16||49.668785095214844,-112.79821014404297|marker-17||&center=49.68258857727051,-112.80477142333984&defaultMarker=none&zoom=8&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":0,"time":228,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif","direction":4},{"distance":62.824,"streets":["Red
-        Coat Trail","AB-4 S"],"narrative":"Turn left onto 24 Ave/Red Coat Trail/AB-4.
-        Continue to follow Red Coat Trail/AB-4 S (Crossing into Montana, United States).","turnType":6,"startPoint":{"lng":-112.79821,"lat":49.668785},"index":16,"formattedTime":"01:02:55","directionName":"Southeast","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"4","type":22,"url":"http://icons.mqcdn.com/icons/rs22.png?n=4&d=SOUTH","direction":4}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=49.668785095214844,-112.79821014404297|marker-17||48.99862289428711,-111.9609146118164|marker-18||&center=49.33370399475098,-112.37956237792969&defaultMarker=none&zoom=4&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":192,"time":3775,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif","direction":5},{"distance":118.082,"streets":["I-15
-        S"],"narrative":"Red Coat Trail/AB-4 S becomes I-15 S.","turnType":0,"startPoint":{"lng":-111.960915,"lat":48.998623},"index":17,"formattedTime":"01:30:33","directionName":"South","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"15","type":1,"url":"http://icons.mqcdn.com/icons/rs1.png?n=15&d=SOUTH","direction":4}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=48.99862289428711,-111.9609146118164|marker-18||47.4840202331543,-111.34574127197266|marker-19||&center=48.2413215637207,-111.65332794189453&defaultMarker=none&zoom=3&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":1152,"time":5433,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif","direction":4},{"distance":90.605,"streets":["MT-200
-        E"],"narrative":"Merge onto MT-200 E via EXIT 278 toward 10th Ave S.","turnType":10,"startPoint":{"lng":-111.345741,"lat":47.48402},"index":18,"formattedTime":"01:24:23","directionName":"East","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"200","type":525,"url":"http://icons.mqcdn.com/icons/rs525.png?n=200&d=EAST","direction":8},{"extraText":"","text":"278","type":1001,"url":"http://icons.mqcdn.com/icons/rs1001.png?n=278&d=RIGHT","direction":0}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=47.4840202331543,-111.34574127197266|marker-19||46.9830207824707,-109.74528503417969|marker-20||&center=47.2335205078125,-110.54551315307617&defaultMarker=none&zoom=4&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":1152,"time":5063,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif","direction":8},{"distance":39.188,"streets":["US
-        HIghway 191","US-191 S"],"narrative":"Turn right onto US HIghway 191/US-191
-        S.","turnType":2,"startPoint":{"lng":-109.745285,"lat":46.983021},"index":19,"formattedTime":"00:44:47","directionName":"South","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"191","type":2,"url":"http://icons.mqcdn.com/icons/rs2.png?n=191&d=SOUTH","direction":4}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=46.9830207824707,-109.74528503417969|marker-20||46.4364013671875,-109.81330871582031|marker-21||&center=46.7097110748291,-109.779296875&defaultMarker=none&zoom=4&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":1024,"time":2687,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif","direction":4},{"distance":45.061,"streets":["US-12
-        E"],"narrative":"Turn left onto US Highway 12/US-12 E. Continue to follow
-        US-12 E.","turnType":6,"startPoint":{"lng":-109.813309,"lat":46.436401},"index":20,"formattedTime":"00:39:34","directionName":"East","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"12","type":2,"url":"http://icons.mqcdn.com/icons/rs2.png?n=12&d=EAST","direction":8}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=46.4364013671875,-109.81330871582031|marker-21||46.3066291809082,-108.93846130371094|marker-22||&center=46.37151527404785,-109.37588500976562&defaultMarker=none&zoom=5&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":0,"time":2374,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif","direction":8},{"distance":40.401,"streets":["MT-3"],"narrative":"Turn
-        right onto MT Highway 3/MT-3. Continue to follow MT-3.","turnType":2,"startPoint":{"lng":-108.938461,"lat":46.306629},"index":21,"formattedTime":"00:36:26","directionName":"South","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"3","type":525,"url":"http://icons.mqcdn.com/icons/rs525.png?n=3","direction":0}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=46.3066291809082,-108.93846130371094|marker-22||45.8064079284668,-108.60008239746094|marker-23||&center=46.0565185546875,-108.76927185058594&defaultMarker=none&zoom=4&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":0,"time":2186,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif","direction":4},{"distance":3.145,"streets":["MT
-        Highway 3","MT-3"],"narrative":"Enter next roundabout and take the 2nd exit
-        onto MT Highway 3/MT-3.","turnType":1,"startPoint":{"lng":-108.600082,"lat":45.806408},"index":22,"formattedTime":"00:04:03","directionName":"East","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"3","type":525,"url":"http://icons.mqcdn.com/icons/rs525.png?n=3","direction":0}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=45.8064079284668,-108.60008239746094|marker-23||45.80213928222656,-108.53565216064453|marker-24||&center=45.80427360534668,-108.56786727905273&defaultMarker=none&zoom=8&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":0,"time":243,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_slight_right_sm.gif","direction":8},{"distance":2.867,"streets":["E
-        Airport Rd","MT-318"],"narrative":"Enter next roundabout and take the 2nd
-        exit onto E Airport Rd/MT-318.","turnType":1,"startPoint":{"lng":-108.535652,"lat":45.802139},"index":23,"formattedTime":"00:03:43","directionName":"East","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"318","type":525,"url":"http://icons.mqcdn.com/icons/rs525.png?n=318","direction":0}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=45.80213928222656,-108.53565216064453|marker-24||45.80390167236328,-108.47748565673828|marker-25||&center=45.80302047729492,-108.5065689086914&defaultMarker=none&zoom=8&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":0,"time":223,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_slight_right_sm.gif","direction":8},{"distance":0.725,"streets":["Main
-        St","US-87 S"],"narrative":"Turn right onto Main St/US-87 S.","turnType":2,"startPoint":{"lng":-108.477486,"lat":45.803902},"index":24,"formattedTime":"00:01:25","directionName":"South","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"87","type":2,"url":"http://icons.mqcdn.com/icons/rs2.png?n=87&d=SOUTH","direction":4}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=45.80390167236328,-108.47748565673828|marker-25||45.794185638427734,-108.4815902709961|marker-26||&center=45.79904365539551,-108.47953796386719&defaultMarker=none&zoom=10&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":0,"time":85,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif","direction":4},{"distance":1.313,"streets":["US-87
-        S"],"narrative":"Turn left onto US Highway 87/US-87 S. Continue to follow
-        US-87 S.","turnType":6,"startPoint":{"lng":-108.48159,"lat":45.794186},"index":25,"formattedTime":"00:02:00","directionName":"South","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"87","type":2,"url":"http://icons.mqcdn.com/icons/rs2.png?n=87&d=SOUTH","direction":4}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=45.794185638427734,-108.4815902709961|marker-26||45.79595947265625,-108.45613098144531|marker-27||&center=45.79507255554199,-108.4688606262207&defaultMarker=none&zoom=10&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":1024,"time":120,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif","direction":4},{"distance":0.01,"streets":["US-87
-        S"],"narrative":"Turn left to stay on US-87 S.","turnType":6,"startPoint":{"lng":-108.456131,"lat":45.795959},"index":26,"formattedTime":"00:00:03","directionName":"South","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"87","type":2,"url":"http://icons.mqcdn.com/icons/rs2.png?n=87&d=SOUTH","direction":4}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=45.79595947265625,-108.45613098144531|marker-27||45.79603958129883,-108.45597076416016|marker-28||&center=45.79599952697754,-108.45605087280273&defaultMarker=none&zoom=15&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":0,"time":3,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif","direction":4},{"distance":3.444,"streets":["I-90
-        E","US-87 S","US-212 E"],"narrative":"Merge onto I-90 E/US-87 S/US-212 E.","turnType":10,"startPoint":{"lng":-108.455971,"lat":45.79604},"index":27,"formattedTime":"00:03:24","directionName":"East","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"90","type":1,"url":"http://icons.mqcdn.com/icons/rs1.png?n=90&d=EAST","direction":8},{"extraText":"","text":"87","type":2,"url":"http://icons.mqcdn.com/icons/rs2.png?n=87&d=SOUTH","direction":4},{"extraText":"","text":"212","type":2,"url":"http://icons.mqcdn.com/icons/rs2.png?n=212&d=EAST","direction":8}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=45.79603958129883,-108.45597076416016|marker-28||45.82487869262695,-108.3982925415039|marker-29||&center=45.81045913696289,-108.42713165283203&defaultMarker=none&zoom=8&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":128,"time":204,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif","direction":8},{"distance":156.064,"streets":["I-90
-        E"],"narrative":"Merge onto I-90 E via EXIT 456 toward I-90 E/Sheridan (Crossing
-        into Wyoming).","turnType":10,"startPoint":{"lng":-108.398293,"lat":45.824879},"index":28,"formattedTime":"02:01:17","directionName":"East","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"90","type":1,"url":"http://icons.mqcdn.com/icons/rs1.png?n=90&d=EAST","direction":8},{"extraText":"","text":"456","type":1001,"url":"http://icons.mqcdn.com/icons/rs1001.png?n=456&d=RIGHT","direction":0}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=45.82487869262695,-108.3982925415039|marker-29||44.374595642089844,-106.69266510009766|marker-30||&center=45.0997371673584,-107.54547882080078&defaultMarker=none&zoom=3&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":1152,"time":7277,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif","direction":8},{"distance":386.408,"streets":["I-25
-        S"],"narrative":"Merge onto I-25 S via EXIT 56B toward Casper (Crossing into
-        Colorado).","turnType":10,"startPoint":{"lng":-106.692665,"lat":44.374596},"index":29,"formattedTime":"05:02:46","directionName":"South","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"25","type":1,"url":"http://icons.mqcdn.com/icons/rs1.png?n=25&d=SOUTH","direction":4},{"extraText":"","text":"56B","type":1001,"url":"http://icons.mqcdn.com/icons/rs1001.png?n=56B&d=RIGHT","direction":0}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=44.374595642089844,-106.69266510009766|marker-30||39.775840759277344,-104.98961639404297|marker-31||&center=42.075218200683594,-105.84114074707031&defaultMarker=none&zoom=2&rand=1878571897&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":1152,"time":18166,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif","direction":4},{"distance":1.405,"streets":["Park
-        Ave"],"narrative":"Merge onto Park Ave via EXIT 213 toward Downtown.","turnType":10,"startPoint":{"lng":-104.989616,"lat":39.775841},"index":30,"formattedTime":"00:02:27","directionName":"South","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"213","type":1001,"url":"http://icons.mqcdn.com/icons/rs1001.png?n=213&d=RIGHT","direction":0}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=39.775840759277344,-104.98961639404297|marker-31||39.75706100463867,-104.99290466308594|marker-32||&center=39.76645088195801,-104.99126052856445&defaultMarker=none&zoom=9&rand=1878187148&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":1024,"time":147,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif","direction":4},{"distance":0.213,"streets":["22nd
-        St"],"narrative":"Park Ave becomes 22nd St.","turnType":0,"startPoint":{"lng":-104.992905,"lat":39.757061},"index":31,"formattedTime":"00:00:36","directionName":"Southeast","maneuverNotes":[],"linkIds":[],"signs":[],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=39.75706100463867,-104.99290466308594|marker-32||39.754825592041016,-104.99016571044922|marker-33||&center=39.755943298339844,-104.99153518676758&defaultMarker=none&zoom=12&rand=1878187148&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":0,"time":36,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif","direction":5},{"distance":0.404,"streets":["Larimer
-        St","CO-33"],"narrative":"Turn right onto Larimer St/CO-33.","turnType":2,"startPoint":{"lng":-104.990166,"lat":39.754826},"index":32,"formattedTime":"00:01:08","directionName":"Southwest","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"33","type":505,"url":"http://icons.mqcdn.com/icons/rs505.png?n=33","direction":0}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=39.754825592041016,-104.99016571044922|marker-33||39.75068664550781,-104.99552917480469|marker-34||&center=39.752756118774414,-104.99284744262695&defaultMarker=none&zoom=11&rand=1878187148&session=63659d17-0208-5f21-02b4-39b3-0298ec050309","transportMode":"AUTO","attributes":0,"time":68,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif","direction":6},{"distance":0,"streets":[],"narrative":"1772
-        LARIMER ST is on the left.","turnType":-1,"startPoint":{"lng":-104.995529,"lat":39.750687},"index":33,"formattedTime":"00:00:00","directionName":"","maneuverNotes":[],"linkIds":[],"signs":[],"transportMode":"AUTO","attributes":0,"time":0,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-end_sm.gif","direction":0}],"hasFerry":false}],"options":{"arteryWeights":[],"cyclingRoadFactor":1,"timeType":0,"useTraffic":false,"returnLinkDirections":false,"countryBoundaryDisplay":true,"enhancedNarrative":false,"locale":"en_US","tryAvoidLinkIds":[],"drivingStyle":2,"doReverseGeocode":true,"generalize":-1,"mustAvoidLinkIds":[],"sideOfStreetDisplay":true,"routeType":"FASTEST","avoidTimedConditions":false,"routeNumber":0,"shapeFormat":"raw","maxWalkingDistance":-1,"destinationManeuverDisplay":true,"transferPenalty":-1,"narrativeType":"text","walkingSpeed":-1,"urbanAvoidFactor":-1,"stateBoundaryDisplay":true,"unit":"M","highwayEfficiency":22,"maxLinkId":0,"maneuverPenalty":-1,"avoidTripIds":[],"filterZoneFactor":-1,"manmaps":"true"},"locations":[{"dragPoint":false,"displayLatLng":{"lng":-115.372147,"lat":51.097168},"adminArea4":"Division
-        No. 15","adminArea5":"Canmore","postalCode":"T1W1T5","adminArea1":"CA","adminArea3":"AB","type":"s","sideOfStreet":"L","geocodeQualityCode":"P1AAA","adminArea4Type":"County","linkId":72441378,"street":"1225
-        17 St","adminArea5Type":"City","geocodeQuality":"POINT","adminArea1Type":"Country","adminArea3Type":"State","latLng":{"lng":-115.372143,"lat":51.097169}},{"dragPoint":false,"displayLatLng":{"lng":-104.995227,"lat":39.750284},"adminArea4":"Denver","adminArea5":"Denver","postalCode":"80202","adminArea1":"US","adminArea3":"CO","type":"s","sideOfStreet":"R","geocodeQualityCode":"L1AAA","adminArea4Type":"County","linkId":11503176,"street":"1772
-        Larimer St","adminArea5Type":"City","geocodeQuality":"ADDRESS","adminArea1Type":"Country","adminArea3Type":"State","latLng":{"lng":-104.995227,"lat":39.750284}}],"time":60226,"hasUnpaved":false,"locationSequence":[0,1],"hasFerry":false},"info":{"statuscode":0,"copyright":{"imageAltText":"©
-        2022 MapQuest, Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","text":"©
-        2022 MapQuest, Inc."},"messages":[]}}'
-  recorded_at: Fri, 04 Nov 2022 23:15:35 GMT
-- request:
-    method: get
-    uri: https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=RWGszWhEStbSOOmqn7vwLP5DC5eOCRl7GN1ZEX5U&limit=1&location=1331%2017th%20St%20LL100,%20Denver,%20CO%2080202
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.6.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Fri, 04 Nov 2022 23:15:35 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Max-Age:
-      - '86400'
-      Age:
-      - '0'
       Cache-Control:
       - max-age=0, private, must-revalidate
       Last-Modified:
-      - Fri, 04 Nov 2022 23:15:35 GMT
+      - Sat, 05 Nov 2022 15:53:42 GMT
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Strict-Transport-Security:
@@ -237,13 +59,13 @@ http_interactions:
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Remaining:
-      - '933'
+      - '996'
       X-Request-Id:
-      - 76db7ee9410cbdfe723747f4f4f54a9b
+      - 329a3073869926b955b51a59fc21acde
       X-Runtime:
-      - '0.012831'
+      - '0.013000'
       X-Vcap-Request-Id:
-      - e522fca1-fde3-436b-744a-0b7debd69ca3
+      - ccefe6c9-5939-454f-74f9-f57d56e54772
       X-Xss-Protection:
       - 1; mode=block
       X-Frame-Options:
@@ -251,11 +73,11 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"latitude":39.75055,"longitude":-104.99673,"location_country":"US","precision":{"value":8,"name":"address","types":["street_address"]},"station_locator_url":"https://afdc.energy.gov/stations/","total_results":239,"station_counts":{"total":540,"fuels":{"BD":{"total":0},"E85":{"total":2},"ELEC":{"total":532,"stations":{"total":231}},"HY":{"total":0},"LNG":{"total":0},"CNG":{"total":1},"LPG":{"total":5}}},"offset":0,"fuel_stations":[{"access_code":"public","access_days_time":"24
-        hours daily","access_detail_code":null,"cards_accepted":null,"date_last_confirmed":"2022-11-04","expected_date":null,"fuel_type_code":"ELEC","groups_with_access_code":"Public","id":233490,"open_date":"2022-10-14","owner_type_code":null,"status_code":"E","restricted_access":null,"station_name":"17TH
-        ST PLAZA P1 EV STATION","station_phone":"888-758-4389","updated_at":"2022-11-04T01:44:34Z","facility_type":null,"geocode_status":"GPS","latitude":39.750284,"longitude":-104.995227,"city":"Denver","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1225
+        hours daily","access_detail_code":null,"cards_accepted":null,"date_last_confirmed":"2022-11-05","expected_date":null,"fuel_type_code":"ELEC","groups_with_access_code":"Public","id":233490,"open_date":"2022-10-14","owner_type_code":null,"status_code":"E","restricted_access":null,"station_name":"17TH
+        ST PLAZA P1 EV STATION","station_phone":"888-758-4389","updated_at":"2022-11-05T01:45:51Z","facility_type":null,"geocode_status":"GPS","latitude":39.750284,"longitude":-104.995227,"city":"Denver","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1225
         17th St","zip":"80202","country":"US","bd_blends":null,"cng_dispenser_num":null,"cng_fill_type_code":null,"cng_psi":null,"cng_renewable_source":null,"cng_total_compression":null,"cng_total_storage":null,"cng_vehicle_class":null,"e85_blender_pump":null,"e85_other_ethanol_blends":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
         Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"ev_pricing":null,"ev_renewable_source":null,"hy_is_retail":null,"hy_pressures":null,"hy_standards":null,"hy_status_link":null,"lng_renewable_source":null,"lng_vehicle_class":null,"lpg_primary":null,"lpg_nozzle_types":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"access_days_time_fr":null,"intersection_directions_fr":null,"bd_blends_fr":null,"groups_with_access_code_fr":"Public","ev_pricing_fr":null,"ev_network_ids":{"station":["USCPIL13129851"],"posts":["22450591","22450601"]},"distance":0.08212,"distance_km":0.13216}]}'
-  recorded_at: Fri, 04 Nov 2022 23:15:35 GMT
+  recorded_at: Sat, 05 Nov 2022 15:53:42 GMT
 - request:
     method: get
     uri: http://www.mapquestapi.com/directions/v2/route?from=1331%2017th%20St%20LL100,%20Denver,%20CO%2080202&key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&to=39.750284,-104.995227
@@ -275,17 +97,17 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Fri, 04 Nov 2022 23:15:36 GMT
+      - Sat, 05 Nov 2022 15:53:42 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
       - '6354'
       Set-Cookie:
-      - JSESSIONID=2CB0287631900C434EF55A0622B5F5F7; Path=/directions; HttpOnly
+      - JSESSIONID=5568B6673BD9E239C93D5DE1FA511739; Path=/directions; HttpOnly
       Expires:
       - Mon, 20 Dec 1998 01:00:00 GMT
       Last-Modified:
-      - Fri, 04 Nov 2022 23:15:36 GMT
+      - Sat, 05 Nov 2022 15:53:42 GMT
       Cache-Control:
       - no-cache, must-revalidate
       Pragma:
@@ -302,16 +124,152 @@ http_interactions:
       - '1'
     body:
       encoding: UTF-8
-      string: '{"route":{"hasTollRoad":false,"hasBridge":false,"boundingBox":{"lr":{"lng":-104.994141,"lat":39.749493},"ul":{"lng":-104.996773,"lat":39.75108}},"distance":0.303,"hasTimedRestriction":false,"hasTunnel":false,"hasHighway":false,"computedWaypoints":[],"routeError":{"errorCode":-400,"message":""},"formattedTime":"00:01:02","sessionId":"63659d18-0058-5f21-02b4-3796-0a7ac6a3adf1","hasAccessRestriction":false,"realTime":83,"hasSeasonalClosure":false,"hasCountryCross":false,"fuelUsed":0.03,"legs":[{"hasTollRoad":false,"hasBridge":false,"destNarrative":"","distance":0.303,"hasTimedRestriction":false,"hasTunnel":false,"hasHighway":false,"index":0,"formattedTime":"00:01:02","origIndex":1,"hasAccessRestriction":false,"hasSeasonalClosure":false,"hasCountryCross":false,"roadGradeStrategy":[[]],"destIndex":-1,"time":62,"hasUnpaved":false,"origNarrative":"Go
+      string: '{"route":{"hasTollRoad":false,"hasBridge":false,"boundingBox":{"lr":{"lng":-104.994141,"lat":39.749493},"ul":{"lng":-104.996773,"lat":39.75108}},"distance":0.303,"hasTimedRestriction":false,"hasTunnel":false,"hasHighway":false,"computedWaypoints":[],"routeError":{"errorCode":-400,"message":""},"formattedTime":"00:01:02","sessionId":"63668706-025f-5f21-02b4-3992-0a62182ee99d","hasAccessRestriction":false,"realTime":77,"hasSeasonalClosure":false,"hasCountryCross":false,"fuelUsed":0.03,"legs":[{"hasTollRoad":false,"hasBridge":false,"destNarrative":"","distance":0.303,"hasTimedRestriction":false,"hasTunnel":false,"hasHighway":false,"index":0,"formattedTime":"00:01:02","origIndex":1,"hasAccessRestriction":false,"hasSeasonalClosure":false,"hasCountryCross":false,"roadGradeStrategy":[[]],"destIndex":-1,"time":62,"hasUnpaved":false,"origNarrative":"Go
         northeast on Lawrence St/CO-33.","maneuvers":[{"distance":0.108,"streets":["17th
-        St"],"narrative":"Start out going southeast on 17th St toward Larimer St/CO-33.","turnType":6,"startPoint":{"lng":-104.996773,"lat":39.75061},"index":0,"formattedTime":"00:00:26","directionName":"Southeast","maneuverNotes":[],"linkIds":[],"signs":[],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=39.7506103515625,-104.99677276611328|marker-1||39.74949264526367,-104.995361328125|marker-2||&center=39.750051498413086,-104.99606704711914&defaultMarker=none&zoom=13&rand=1690814434&session=63659d18-0058-5f21-02b4-3796-0a7ac6a3adf1","transportMode":"AUTO","attributes":0,"time":26,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif","direction":5},{"distance":0.092,"streets":["Lawrence
-        St","CO-33"],"narrative":"Turn left onto Lawrence St/CO-33.","turnType":6,"startPoint":{"lng":-104.995361,"lat":39.749493},"index":1,"formattedTime":"00:00:15","directionName":"Northeast","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"33","type":505,"url":"http://icons.mqcdn.com/icons/rs505.png?n=33","direction":0}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=39.74949264526367,-104.995361328125|marker-2||39.750431060791016,-104.994140625|marker-3||&center=39.749961853027344,-104.9947509765625&defaultMarker=none&zoom=14&rand=1690814434&session=63659d18-0058-5f21-02b4-3796-0a7ac6a3adf1","transportMode":"AUTO","attributes":0,"time":15,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif","direction":3},{"distance":0.065,"streets":["18th
-        St"],"narrative":"Turn left onto 18th St.","turnType":6,"startPoint":{"lng":-104.994141,"lat":39.750431},"index":2,"formattedTime":"00:00:15","directionName":"Northwest","maneuverNotes":[],"linkIds":[],"signs":[],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=39.750431060791016,-104.994140625|marker-3||39.75107955932617,-104.9950180053711|marker-4||&center=39.750755310058594,-104.99457931518555&defaultMarker=none&zoom=14&rand=1690814434&session=63659d18-0058-5f21-02b4-3796-0a7ac6a3adf1","transportMode":"AUTO","attributes":0,"time":15,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif","direction":2},{"distance":0.038,"streets":["Larimer
-        St","CO-33"],"narrative":"Turn left onto Larimer St/CO-33.","turnType":6,"startPoint":{"lng":-104.995018,"lat":39.75108},"index":3,"formattedTime":"00:00:06","directionName":"Southwest","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"33","type":505,"url":"http://icons.mqcdn.com/icons/rs505.png?n=33","direction":0}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=39.75107955932617,-104.9950180053711|marker-4||39.75068664550781,-104.99552917480469|marker-5||&center=39.75088310241699,-104.99527359008789&defaultMarker=none&zoom=15&rand=1690429685&session=63659d18-0058-5f21-02b4-3796-0a7ac6a3adf1","transportMode":"AUTO","attributes":0,"time":6,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif","direction":6},{"distance":0,"streets":[],"narrative":"1772
+        St"],"narrative":"Start out going southeast on 17th St toward Larimer St/CO-33.","turnType":6,"startPoint":{"lng":-104.996773,"lat":39.75061},"index":0,"formattedTime":"00:00:26","directionName":"Southeast","maneuverNotes":[],"linkIds":[],"signs":[],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=39.7506103515625,-104.99677276611328|marker-1||39.74949264526367,-104.995361328125|marker-2||&center=39.750051498413086,-104.99606704711914&defaultMarker=none&zoom=13&rand=-726486276&session=63668706-025f-5f21-02b4-3992-0a62182ee99d","transportMode":"AUTO","attributes":0,"time":26,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif","direction":5},{"distance":0.092,"streets":["Lawrence
+        St","CO-33"],"narrative":"Turn left onto Lawrence St/CO-33.","turnType":6,"startPoint":{"lng":-104.995361,"lat":39.749493},"index":1,"formattedTime":"00:00:15","directionName":"Northeast","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"33","type":505,"url":"http://icons.mqcdn.com/icons/rs505.png?n=33","direction":0}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=39.74949264526367,-104.995361328125|marker-2||39.750431060791016,-104.994140625|marker-3||&center=39.749961853027344,-104.9947509765625&defaultMarker=none&zoom=14&rand=-726486276&session=63668706-025f-5f21-02b4-3992-0a62182ee99d","transportMode":"AUTO","attributes":0,"time":15,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif","direction":3},{"distance":0.065,"streets":["18th
+        St"],"narrative":"Turn left onto 18th St.","turnType":6,"startPoint":{"lng":-104.994141,"lat":39.750431},"index":2,"formattedTime":"00:00:15","directionName":"Northwest","maneuverNotes":[],"linkIds":[],"signs":[],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=39.750431060791016,-104.994140625|marker-3||39.75107955932617,-104.9950180053711|marker-4||&center=39.750755310058594,-104.99457931518555&defaultMarker=none&zoom=14&rand=-726486276&session=63668706-025f-5f21-02b4-3992-0a62182ee99d","transportMode":"AUTO","attributes":0,"time":15,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif","direction":2},{"distance":0.038,"streets":["Larimer
+        St","CO-33"],"narrative":"Turn left onto Larimer St/CO-33.","turnType":6,"startPoint":{"lng":-104.995018,"lat":39.75108},"index":3,"formattedTime":"00:00:06","directionName":"Southwest","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"33","type":505,"url":"http://icons.mqcdn.com/icons/rs505.png?n=33","direction":0}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=39.75107955932617,-104.9950180053711|marker-4||39.75068664550781,-104.99552917480469|marker-5||&center=39.75088310241699,-104.99527359008789&defaultMarker=none&zoom=15&rand=-726486276&session=63668706-025f-5f21-02b4-3992-0a62182ee99d","transportMode":"AUTO","attributes":0,"time":6,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif","direction":6},{"distance":0,"streets":[],"narrative":"1772
         LARIMER ST is on the left.","turnType":-1,"startPoint":{"lng":-104.995529,"lat":39.750687},"index":4,"formattedTime":"00:00:00","directionName":"","maneuverNotes":[],"linkIds":[],"signs":[],"transportMode":"AUTO","attributes":0,"time":0,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-end_sm.gif","direction":0}],"hasFerry":false}],"options":{"arteryWeights":[],"cyclingRoadFactor":1,"timeType":0,"useTraffic":false,"returnLinkDirections":false,"countryBoundaryDisplay":true,"enhancedNarrative":false,"locale":"en_US","tryAvoidLinkIds":[],"drivingStyle":2,"doReverseGeocode":true,"generalize":-1,"mustAvoidLinkIds":[],"sideOfStreetDisplay":true,"routeType":"FASTEST","avoidTimedConditions":false,"routeNumber":0,"shapeFormat":"raw","maxWalkingDistance":-1,"destinationManeuverDisplay":true,"transferPenalty":-1,"narrativeType":"text","walkingSpeed":-1,"urbanAvoidFactor":-1,"stateBoundaryDisplay":true,"unit":"M","highwayEfficiency":22,"maxLinkId":0,"maneuverPenalty":-1,"avoidTripIds":[],"filterZoneFactor":-1,"manmaps":"true"},"locations":[{"dragPoint":false,"displayLatLng":{"lng":-104.996773,"lat":39.750614},"adminArea4":"Denver","adminArea5":"Denver","postalCode":"80202-1507","adminArea1":"US","adminArea3":"CO","type":"s","sideOfStreet":"R","geocodeQualityCode":"P1AAA","adminArea4Type":"County","linkId":12471326,"street":"1331
         17th St","adminArea5Type":"City","geocodeQuality":"POINT","adminArea1Type":"Country","adminArea3Type":"State","latLng":{"lng":-104.996775,"lat":39.750614}},{"dragPoint":false,"displayLatLng":{"lng":-104.995227,"lat":39.750284},"adminArea4":"Denver","adminArea5":"Denver","postalCode":"80202","adminArea1":"US","adminArea3":"CO","type":"s","sideOfStreet":"R","geocodeQualityCode":"L1AAA","adminArea4Type":"County","linkId":11503176,"street":"1772
         Larimer St","adminArea5Type":"City","geocodeQuality":"ADDRESS","adminArea1Type":"Country","adminArea3Type":"State","latLng":{"lng":-104.995227,"lat":39.750284}}],"time":62,"hasUnpaved":false,"locationSequence":[0,1],"hasFerry":false},"info":{"statuscode":0,"copyright":{"imageAltText":"©
         2022 MapQuest, Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","text":"©
         2022 MapQuest, Inc."},"messages":[]}}'
-  recorded_at: Fri, 04 Nov 2022 23:15:36 GMT
+  recorded_at: Sat, 05 Nov 2022 15:53:42 GMT
+- request:
+    method: get
+    uri: https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=RWGszWhEStbSOOmqn7vwLP5DC5eOCRl7GN1ZEX5U&limit=1&location=1331%2017th%20St%20LL100,%20Denver,%20CO%2080202
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 05 Nov 2022 15:53:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Age:
+      - '1'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Last-Modified:
+      - Sat, 05 Nov 2022 15:53:43 GMT
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      - max-age=31536000; preload
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding,Origin
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '995'
+      X-Request-Id:
+      - 59827e7123c8335b251ef8b54c191691
+      X-Runtime:
+      - '0.012882'
+      X-Vcap-Request-Id:
+      - c36c233b-0c69-4c31-5e14-14e3b2ab63f6
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"latitude":39.75055,"longitude":-104.99673,"location_country":"US","precision":{"value":8,"name":"address","types":["street_address"]},"station_locator_url":"https://afdc.energy.gov/stations/","total_results":239,"station_counts":{"total":540,"fuels":{"BD":{"total":0},"E85":{"total":2},"ELEC":{"total":532,"stations":{"total":231}},"HY":{"total":0},"LNG":{"total":0},"CNG":{"total":1},"LPG":{"total":5}}},"offset":0,"fuel_stations":[{"access_code":"public","access_days_time":"24
+        hours daily","access_detail_code":null,"cards_accepted":null,"date_last_confirmed":"2022-11-05","expected_date":null,"fuel_type_code":"ELEC","groups_with_access_code":"Public","id":233490,"open_date":"2022-10-14","owner_type_code":null,"status_code":"E","restricted_access":null,"station_name":"17TH
+        ST PLAZA P1 EV STATION","station_phone":"888-758-4389","updated_at":"2022-11-05T01:45:51Z","facility_type":null,"geocode_status":"GPS","latitude":39.750284,"longitude":-104.995227,"city":"Denver","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1225
+        17th St","zip":"80202","country":"US","bd_blends":null,"cng_dispenser_num":null,"cng_fill_type_code":null,"cng_psi":null,"cng_renewable_source":null,"cng_total_compression":null,"cng_total_storage":null,"cng_vehicle_class":null,"e85_blender_pump":null,"e85_other_ethanol_blends":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"ev_pricing":null,"ev_renewable_source":null,"hy_is_retail":null,"hy_pressures":null,"hy_standards":null,"hy_status_link":null,"lng_renewable_source":null,"lng_vehicle_class":null,"lpg_primary":null,"lpg_nozzle_types":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"access_days_time_fr":null,"intersection_directions_fr":null,"bd_blends_fr":null,"groups_with_access_code_fr":"Public","ev_pricing_fr":null,"ev_network_ids":{"station":["USCPIL13129851"],"posts":["22450591","22450601"]},"distance":0.08212,"distance_km":0.13216}]}'
+  recorded_at: Sat, 05 Nov 2022 15:53:43 GMT
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/directions/v2/route?from=1331%2017th%20St%20LL100,%20Denver,%20CO%2080202&key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&to=39.750284,-104.995227
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Sat, 05 Nov 2022 15:53:43 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '6358'
+      Set-Cookie:
+      - JSESSIONID=F34E70266641B3E2B2C732E46BA80EED; Path=/directions; HttpOnly
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Last-Modified:
+      - Sat, 05 Nov 2022 15:53:43 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      X-Vz-Migration-Api:
+      - 'false'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '{"route":{"hasTollRoad":false,"hasBridge":false,"boundingBox":{"lr":{"lng":-104.994141,"lat":39.749493},"ul":{"lng":-104.996773,"lat":39.75108}},"distance":0.303,"hasTimedRestriction":false,"hasTunnel":false,"hasHighway":false,"computedWaypoints":[],"routeError":{"errorCode":-400,"message":""},"formattedTime":"00:01:02","sessionId":"63668707-018f-5f21-02b4-37d9-0a7414bf9e0d","hasAccessRestriction":false,"realTime":77,"hasSeasonalClosure":false,"hasCountryCross":false,"fuelUsed":0.03,"legs":[{"hasTollRoad":false,"hasBridge":false,"destNarrative":"","distance":0.303,"hasTimedRestriction":false,"hasTunnel":false,"hasHighway":false,"index":0,"formattedTime":"00:01:02","origIndex":1,"hasAccessRestriction":false,"hasSeasonalClosure":false,"hasCountryCross":false,"roadGradeStrategy":[[]],"destIndex":-1,"time":62,"hasUnpaved":false,"origNarrative":"Go
+        northeast on Lawrence St/CO-33.","maneuvers":[{"distance":0.108,"streets":["17th
+        St"],"narrative":"Start out going southeast on 17th St toward Larimer St/CO-33.","turnType":6,"startPoint":{"lng":-104.996773,"lat":39.75061},"index":0,"formattedTime":"00:00:26","directionName":"Southeast","maneuverNotes":[],"linkIds":[],"signs":[],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=39.7506103515625,-104.99677276611328|marker-1||39.74949264526367,-104.995361328125|marker-2||&center=39.750051498413086,-104.99606704711914&defaultMarker=none&zoom=13&rand=-1215886877&session=63668707-018f-5f21-02b4-37d9-0a7414bf9e0d","transportMode":"AUTO","attributes":0,"time":26,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif","direction":5},{"distance":0.092,"streets":["Lawrence
+        St","CO-33"],"narrative":"Turn left onto Lawrence St/CO-33.","turnType":6,"startPoint":{"lng":-104.995361,"lat":39.749493},"index":1,"formattedTime":"00:00:15","directionName":"Northeast","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"33","type":505,"url":"http://icons.mqcdn.com/icons/rs505.png?n=33","direction":0}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=39.74949264526367,-104.995361328125|marker-2||39.750431060791016,-104.994140625|marker-3||&center=39.749961853027344,-104.9947509765625&defaultMarker=none&zoom=14&rand=-1215886877&session=63668707-018f-5f21-02b4-37d9-0a7414bf9e0d","transportMode":"AUTO","attributes":0,"time":15,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif","direction":3},{"distance":0.065,"streets":["18th
+        St"],"narrative":"Turn left onto 18th St.","turnType":6,"startPoint":{"lng":-104.994141,"lat":39.750431},"index":2,"formattedTime":"00:00:15","directionName":"Northwest","maneuverNotes":[],"linkIds":[],"signs":[],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=39.750431060791016,-104.994140625|marker-3||39.75107955932617,-104.9950180053711|marker-4||&center=39.750755310058594,-104.99457931518555&defaultMarker=none&zoom=14&rand=-1215886877&session=63668707-018f-5f21-02b4-37d9-0a7414bf9e0d","transportMode":"AUTO","attributes":0,"time":15,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif","direction":2},{"distance":0.038,"streets":["Larimer
+        St","CO-33"],"narrative":"Turn left onto Larimer St/CO-33.","turnType":6,"startPoint":{"lng":-104.995018,"lat":39.75108},"index":3,"formattedTime":"00:00:06","directionName":"Southwest","maneuverNotes":[],"linkIds":[],"signs":[{"extraText":"","text":"33","type":505,"url":"http://icons.mqcdn.com/icons/rs505.png?n=33","direction":0}],"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=U16RGHuCwcLbNH1LNewCAdwNAnfXdLLA&size=225,160&locations=39.75107955932617,-104.9950180053711|marker-4||39.75068664550781,-104.99552917480469|marker-5||&center=39.75088310241699,-104.99527359008789&defaultMarker=none&zoom=15&rand=-1215886877&session=63668707-018f-5f21-02b4-37d9-0a7414bf9e0d","transportMode":"AUTO","attributes":0,"time":6,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif","direction":6},{"distance":0,"streets":[],"narrative":"1772
+        LARIMER ST is on the left.","turnType":-1,"startPoint":{"lng":-104.995529,"lat":39.750687},"index":4,"formattedTime":"00:00:00","directionName":"","maneuverNotes":[],"linkIds":[],"signs":[],"transportMode":"AUTO","attributes":0,"time":0,"iconUrl":"http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-end_sm.gif","direction":0}],"hasFerry":false}],"options":{"arteryWeights":[],"cyclingRoadFactor":1,"timeType":0,"useTraffic":false,"returnLinkDirections":false,"countryBoundaryDisplay":true,"enhancedNarrative":false,"locale":"en_US","tryAvoidLinkIds":[],"drivingStyle":2,"doReverseGeocode":true,"generalize":-1,"mustAvoidLinkIds":[],"sideOfStreetDisplay":true,"routeType":"FASTEST","avoidTimedConditions":false,"routeNumber":0,"shapeFormat":"raw","maxWalkingDistance":-1,"destinationManeuverDisplay":true,"transferPenalty":-1,"narrativeType":"text","walkingSpeed":-1,"urbanAvoidFactor":-1,"stateBoundaryDisplay":true,"unit":"M","highwayEfficiency":22,"maxLinkId":0,"maneuverPenalty":-1,"avoidTripIds":[],"filterZoneFactor":-1,"manmaps":"true"},"locations":[{"dragPoint":false,"displayLatLng":{"lng":-104.996773,"lat":39.750614},"adminArea4":"Denver","adminArea5":"Denver","postalCode":"80202-1507","adminArea1":"US","adminArea3":"CO","type":"s","sideOfStreet":"R","geocodeQualityCode":"P1AAA","adminArea4Type":"County","linkId":12471326,"street":"1331
+        17th St","adminArea5Type":"City","geocodeQuality":"POINT","adminArea1Type":"Country","adminArea3Type":"State","latLng":{"lng":-104.996775,"lat":39.750614}},{"dragPoint":false,"displayLatLng":{"lng":-104.995227,"lat":39.750284},"adminArea4":"Denver","adminArea5":"Denver","postalCode":"80202","adminArea1":"US","adminArea3":"CO","type":"s","sideOfStreet":"R","geocodeQualityCode":"L1AAA","adminArea4Type":"County","linkId":11503176,"street":"1772
+        Larimer St","adminArea5Type":"City","geocodeQuality":"ADDRESS","adminArea1Type":"Country","adminArea3Type":"State","latLng":{"lng":-104.995227,"lat":39.750284}}],"time":62,"hasUnpaved":false,"locationSequence":[0,1],"hasFerry":false},"info":{"statuscode":0,"copyright":{"imageAltText":"©
+        2022 MapQuest, Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","text":"©
+        2022 MapQuest, Inc."},"messages":[]}}'
+  recorded_at: Sat, 05 Nov 2022 15:53:43 GMT
 recorded_with: VCR 6.1.0
