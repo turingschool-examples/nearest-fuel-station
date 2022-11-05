@@ -11,12 +11,19 @@ RSpec.describe 'the welcome page' do
 
     describe "user selects Turing from start location" do
       it 'redirects to /search and displays the closest electric fuel station', :vcr do
+        station = FuelFacade.get_nearest_station("1331 17th St LL100, Denver, CO 80202")
+        # travel_info = TravelFacade.get_travel_info
         visit '/'
 
         select "Turing", from: "location"
         click_button "Find Nearest Station"
 
         expect(current_path).to eq(search_path)
+
+        expect(page).to have_content(station.name)
+        expect(page).to have_content(station.address)
+        expect(page).to have_content(station.fuel_type)
+        expect(page).to have_content(station.hours)
       end
     end
   end
