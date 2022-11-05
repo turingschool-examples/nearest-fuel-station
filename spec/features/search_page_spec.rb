@@ -12,7 +12,7 @@ RSpec.describe 'search page', type: :feature do
 
       it 'I can see the nearest electric fuel station to me with the name, address, fuel type, and access times' do
         within('#nearest_station') do 
-          save_and_open_page
+
           expect(page).to have_content('400 15th St Denver CO 80202') #TODO format with address, name etc to be more specific
           expect(page).to have_content('Tremont Street Garage')
           expect(page).to have_content('ELEC')
@@ -23,7 +23,7 @@ RSpec.describe 'search page', type: :feature do
       it 'I should also see the distance to the nearest station to the 0.1 miles, travel time from turing to that station (nearest minute)' do 
 
         within('#nearest_station') do 
-          expect(page).to have_content('1.0 miles away')
+          expect(page).to have_content('0.8 miles away')
         end
       end
 
