@@ -13,10 +13,10 @@ RSpec.describe 'search page', type: :feature do
       it 'I can see the nearest electric fuel station to me with the name, address, fuel type, and access times' do
         within('#nearest_station') do 
 
-          expect(page).to have_content('400 15th St Denver CO 80202') #TODO format with address, name etc to be more specific
-          expect(page).to have_content('Tremont Street Garage')
-          expect(page).to have_content('ELEC')
-          expect(page).to have_content('Garage business hours; pay lot')
+          expect(page).to have_content('Address: 400 15th St Denver CO 80202')
+          expect(page).to have_content('Name of Station:Tremont Street Garage')
+          expect(page).to have_content('Fuel Type: ELEC')
+          expect(page).to have_content('Hours of Operation: Garage business hours; pay lot')
         end
       end
 
@@ -27,8 +27,8 @@ RSpec.describe 'search page', type: :feature do
         end
       end
 
-      it 'I should also see and direction instructions to get to that fuel station ' do #  "Turn left onto Lawrence St Destination will be on the left"
-        save_and_open_page
+      it 'I should also see and direction instructions to get to that fuel station ' do 
+
         expect(page).to have_content("Start out going southeast on 17th St toward Larimer St/CO-33")
         expect(page).to have_content("Turn right onto Tremont Pl.")
         expect(page).to have_content("Turn right onto 15th St.")
