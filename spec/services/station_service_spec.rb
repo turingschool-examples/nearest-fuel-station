@@ -14,6 +14,5 @@ describe StationService do
         expect(search[:fuel_stations][0][:station_name]).to be_a(String)
       end
     end
-
   end
 end
