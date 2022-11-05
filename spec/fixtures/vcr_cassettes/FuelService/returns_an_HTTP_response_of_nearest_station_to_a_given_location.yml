@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=<NREL_api>&limit=1&location=1331%2017th%20St%20LL100,%20Denver,%20CO%2080202
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 05 Nov 2022 19:06:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Last-Modified:
+      - Sat, 05 Nov 2022 19:06:40 GMT
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      - max-age=31536000; preload
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding,Origin
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '994'
+      X-Request-Id:
+      - fa52a431c90f4c33048ae8e75c6be31a
+      X-Runtime:
+      - '0.041488'
+      X-Vcap-Request-Id:
+      - d78b6a44-0619-47fa-4729-3901358f74db
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"latitude":39.75055,"longitude":-104.99673,"location_country":"US","precision":{"value":8,"name":"address","types":["street_address"]},"station_locator_url":"https://afdc.energy.gov/stations/","total_results":239,"station_counts":{"total":540,"fuels":{"BD":{"total":0},"E85":{"total":2},"ELEC":{"total":532,"stations":{"total":231}},"HY":{"total":0},"LNG":{"total":0},"CNG":{"total":1},"LPG":{"total":5}}},"offset":0,"fuel_stations":[{"access_code":"public","access_days_time":"24
+        hours daily","access_detail_code":null,"cards_accepted":null,"date_last_confirmed":"2022-11-05","expected_date":null,"fuel_type_code":"ELEC","groups_with_access_code":"Public","id":233490,"open_date":"2022-10-14","owner_type_code":null,"status_code":"E","restricted_access":null,"station_name":"17TH
+        ST PLAZA P1 EV STATION","station_phone":"888-758-4389","updated_at":"2022-11-05T01:45:51Z","facility_type":null,"geocode_status":"GPS","latitude":39.750284,"longitude":-104.995227,"city":"Denver","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1225
+        17th St","zip":"80202","country":"US","bd_blends":null,"cng_dispenser_num":null,"cng_fill_type_code":null,"cng_psi":null,"cng_renewable_source":null,"cng_total_compression":null,"cng_total_storage":null,"cng_vehicle_class":null,"e85_blender_pump":null,"e85_other_ethanol_blends":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"ev_pricing":null,"ev_renewable_source":null,"hy_is_retail":null,"hy_pressures":null,"hy_standards":null,"hy_status_link":null,"lng_renewable_source":null,"lng_vehicle_class":null,"lpg_primary":null,"lpg_nozzle_types":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"access_days_time_fr":null,"intersection_directions_fr":null,"bd_blends_fr":null,"groups_with_access_code_fr":"Public","ev_pricing_fr":null,"ev_network_ids":{"station":["USCPIL13129851"],"posts":["22450591","22450601"]},"distance":0.08212,"distance_km":0.13216}]}'
+  recorded_at: Sat, 05 Nov 2022 19:06:40 GMT
+recorded_with: VCR 6.1.0
