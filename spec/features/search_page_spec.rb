@@ -34,7 +34,6 @@ RSpec.describe 'search page', type: :feature do
         expect(page).to have_content("Turn right onto 15th St.")
         expect(page).to have_content("400 15TH ST is on the left.")
       end
-
     end
   end
 end
