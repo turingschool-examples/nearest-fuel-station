@@ -19,13 +19,13 @@ RSpec.describe 'the welcome page' do
         click_button "Find Nearest Station"
 
         expect(current_path).to eq(search_path)
-        
+
         expect(page).to have_content(station.name)
         expect(page).to have_content(station.address)
         expect(page).to have_content(station.fuel_type)
         expect(page).to have_content(station.hours)
-        expect(page).to have_content(travel_info.distance)
-        expect(page).to have_content(travel_info.travel_time)
+        expect(page).to have_content("0.1 miles")
+        expect(page).to have_content("00 hours 00 minutes 18 seconds")
         expect(page).to have_content(travel_info.directions)
       end
     end

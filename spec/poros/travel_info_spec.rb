@@ -48,11 +48,11 @@ r=39.75019073486328,-104.99624252319336&defaultMarker=none&zoom=14&rand=-2023386
   end
 
   it 'has a distance' do
-    expect(@travel_info.distance).to eq(0.081)
+    expect(@travel_info.distance).to eq("0.1 miles")
   end
 
   it 'has a travel time' do
-    expect(@travel_info.travel_time).to eq("00:00:18")
+    expect(@travel_info.travel_time).to eq("00 hours 00 minutes 18 seconds")
   end
 
   it 'has directions' do
