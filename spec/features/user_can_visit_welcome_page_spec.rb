@@ -10,7 +10,7 @@ RSpec.describe 'the welcome page' do
     end
 
     describe "user selects Turing from start location" do
-      it 'redirects to /search and displays the closest electric fuel station' do
+      it 'redirects to /search and displays the closest electric fuel station', :vcr do
         visit '/'
 
         select "Turing", from: "location"

@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 05 Nov 2022 19:06:40 GMT
+      - Sat, 05 Nov 2022 19:10:05 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -37,7 +37,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Last-Modified:
-      - Sat, 05 Nov 2022 19:06:40 GMT
+      - Sat, 05 Nov 2022 19:10:05 GMT
       Referrer-Policy:
       - strict-origin-when-cross-origin
       Strict-Transport-Security:
@@ -61,11 +61,11 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '994'
       X-Request-Id:
-      - fa52a431c90f4c33048ae8e75c6be31a
+      - 5d5b9a387130aac348f3d01e828e4f10
       X-Runtime:
-      - '0.041488'
+      - '0.012963'
       X-Vcap-Request-Id:
-      - d78b6a44-0619-47fa-4729-3901358f74db
+      - 1fb00bbb-10b9-4f32-6d6d-f42f4aa03f0b
       X-Xss-Protection:
       - 1; mode=block
       X-Frame-Options:
@@ -77,5 +77,5 @@ http_interactions:
         ST PLAZA P1 EV STATION","station_phone":"888-758-4389","updated_at":"2022-11-05T01:45:51Z","facility_type":null,"geocode_status":"GPS","latitude":39.750284,"longitude":-104.995227,"city":"Denver","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1225
         17th St","zip":"80202","country":"US","bd_blends":null,"cng_dispenser_num":null,"cng_fill_type_code":null,"cng_psi":null,"cng_renewable_source":null,"cng_total_compression":null,"cng_total_storage":null,"cng_vehicle_class":null,"e85_blender_pump":null,"e85_other_ethanol_blends":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
         Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"ev_pricing":null,"ev_renewable_source":null,"hy_is_retail":null,"hy_pressures":null,"hy_standards":null,"hy_status_link":null,"lng_renewable_source":null,"lng_vehicle_class":null,"lpg_primary":null,"lpg_nozzle_types":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"access_days_time_fr":null,"intersection_directions_fr":null,"bd_blends_fr":null,"groups_with_access_code_fr":"Public","ev_pricing_fr":null,"ev_network_ids":{"station":["USCPIL13129851"],"posts":["22450591","22450601"]},"distance":0.08212,"distance_km":0.13216}]}'
-  recorded_at: Sat, 05 Nov 2022 19:06:40 GMT
+  recorded_at: Sat, 05 Nov 2022 19:10:06 GMT
 recorded_with: VCR 6.1.0

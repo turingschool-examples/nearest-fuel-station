@@ -1,6 +1,6 @@
 class SearchController < ApplicationController
   def index
-    require 'pry' ; binding.pry
+    @station = FuelFacade.get_nearest_station(params[:location])
     @location = params[:location]
   end
 end
