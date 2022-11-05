@@ -1,15 +1,108 @@
-# require 'rails_helper'
+require 'rails_helper'
 
-# RSpec.describe Direction do
-#   it 'exists' do
-#     attrs = {
-#       author: 'BananaSam27',
-#       content: "This movie rocks!",
-#     }
+RSpec.describe Direction do
+  it 'exists' do
+    attrs = {:hasTollRoad=>false,
+      :hasBridge=>false,
+      :destNarrative=>"",
+      :distance=>0.826,
+      :hasTimedRestriction=>false,
+      :hasTunnel=>false,
+      :hasHighway=>false,
+      :index=>0,
+      :formattedTime=>"00:03:03",
+      :origIndex=>-1,
+      :hasAccessRestriction=>false,
+      :hasSeasonalClosure=>false,
+      :hasCountryCross=>false,
+      :roadGradeStrategy=>[[]],
+      :destIndex=>-1,
+      :time=>183,
+      :hasUnpaved=>false,
+      :origNarrative=>"",
+      :maneuvers=>
+       [{:distance=>0.626,
+         :streets=>["17th St"],
+         :narrative=>"Start out going southeast on 17th St toward Larimer St/CO-33.",
+         :turnType=>0,
+         :startPoint=>{:lng=>-104.996658, :lat=>39.750526},
+         :index=>0,
+         :formattedTime=>"00:02:26",
+         :directionName=>"Southeast",
+         :maneuverNotes=>[],
+         :linkIds=>[],
+         :signs=>[],
+         :mapUrl=>
+          "http://www.mapquestapi.com/staticmap/v5/map?key=GdGXZid5VTocr6kyMSAcoo9FwIS789r3&size=225,160&locations=39.750526428222656,-104.99665832519531|marker-1||39.744102478027344,-104.98835754394531|marker-2||&center=39.747314453125,-104.99250793457031&defaultMarker=none&zoom=10&rand=849867120&session=636697ad-0073-5f21-02b4-37c7-0a5c61014d77",
+         :transportMode=>"AUTO",
+         :attributes=>0,
+         :time=>146,
+         :iconUrl=>"http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif",
+         :direction=>5},
+        {:distance=>0.181,
+         :streets=>["Tremont Pl"],
+         :narrative=>"Turn right onto Tremont Pl.",
+         :turnType=>2,
+         :startPoint=>{:lng=>-104.988358, :lat=>39.744102},
+         :index=>1,
+         :formattedTime=>"00:00:34",
+         :directionName=>"Southwest",
+         :maneuverNotes=>[],
+         :linkIds=>[],
+         :signs=>[],
+         :mapUrl=>
+          "http://www.mapquestapi.com/staticmap/v5/map?key=GdGXZid5VTocr6kyMSAcoo9FwIS789r3&size=225,160&locations=39.744102478027344,-104.98835754394531|marker-2||39.742252349853516,-104.99075317382812|marker-3||&center=39.74317741394043,-104.98955535888672&defaultMarker=none&zoom=12&rand=849867120&session=636697ad-0073-5f21-02b4-37c7-0a5c61014d77",
+         :transportMode=>"AUTO",
+         :attributes=>0,
+         :time=>34,
+         :iconUrl=>"http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+         :direction=>6},
+        {:distance=>0.019,
+         :streets=>["15th St"],
+         :narrative=>"Turn right onto 15th St.",
+         :turnType=>2,
+         :startPoint=>{:lng=>-104.990753, :lat=>39.742252},
+         :index=>2,
+         :formattedTime=>"00:00:03",
+         :directionName=>"Northwest",
+         :maneuverNotes=>[],
+         :linkIds=>[],
+         :signs=>[],
+         :mapUrl=>
+          "http://www.mapquestapi.com/staticmap/v5/map?key=GdGXZid5VTocr6kyMSAcoo9FwIS789r3&size=225,160&locations=39.742252349853516,-104.99075317382812|marker-3||39.74243927001953,-104.99101257324219|marker-4||&center=39.74234580993652,-104.99088287353516&defaultMarker=none&zoom=15&rand=849867120&session=636697ad-0073-5f21-02b4-37c7-0a5c61014d77",
+         :transportMode=>"AUTO",
+         :attributes=>0,
+         :time=>3,
+         :iconUrl=>"http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+         :direction=>2},
+        {:distance=>0,
+         :streets=>[],
+         :narrative=>"400 15TH ST is on the left.",
+         :turnType=>-1,
+         :startPoint=>{:lng=>-104.991013, :lat=>39.742439},
+         :index=>3,
+         :formattedTime=>"00:00:00",
+         :directionName=>"",
+         :maneuverNotes=>[],
+         :linkIds=>[],
+         :signs=>[],
+         :transportMode=>"AUTO",
+         :attributes=>0,
+         :time=>0,
+         :iconUrl=>"http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-end_sm.gif",
+         :direction=>0}],
+      :hasFerry=>false}
 
-#     direction_info = Direction.new(attrs)
-#     expect(direction_info.author_name).to eq("BananaSam27")
-#     expect(direction_info.author_review).to eq('This movie rocks!')
-#   end
-# end
+    directions = Direction.new(attrs)
+    expect(directions.directions_list).to be_an(Array)
+    expect(directions.directions_list.length).to eq(4)
+    expect(directions.directions_list).to eq(
+                                    ["Start out going southeast on 17th St toward Larimer St/CO-33.",
+                                    "Turn right onto Tremont Pl.",
+                                    "Turn right onto 15th St.",
+                                    "400 15TH ST is on the left."])
+  end
+end
+
+
 

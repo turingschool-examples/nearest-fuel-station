@@ -7,8 +7,4 @@ class Direction
         direction_instruction[:narrative]
       end
     end
-
-    def make_instructions
-
-    end
 end
