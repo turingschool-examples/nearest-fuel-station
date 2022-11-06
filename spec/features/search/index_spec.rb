@@ -9,6 +9,8 @@ RSpec.describe 'Search Page' do
             visit '/'
             select 'Turing', from: :location
             click_button 'Find Nearest Station'
+            location = 'Denver, CO 80202' #This will likely change with MAP api
+            @station = FuelFacade.get_nearest_station(location)
           end
 
           it 'I should be on page "/search"' do
@@ -16,24 +18,20 @@ RSpec.describe 'Search Page' do
           end
 
           it 'I should see the closest electric fuel station to me' do
-            expect(page).to have_content('Closest Station: ')
+            expect(page).to have_content("Closest Station: #{@station.name}")
           end
 
           describe 'the station' do
-            it 'I should see the station name' do
-              expect(page).to have_content('Name: ')
-            end
-
             it 'I should see the station address' do
-              expect(page).to have_content('Address: ')
+              expect(page).to have_content("Address: #{@station.address}")
             end
 
             it 'I should see the fuel type' do
-              expect(page).to have_content('Fuel Type: ')
+              expect(page).to have_content("Fuel Type: #{@station.fuel_type}")
             end
 
             it 'I should see the access times' do
-              expect(page).to have_content('Access Times: ')
+              expect(page).to have_content("Access Times: #{@station.access_times}")
             end
 
             it 'I should see the distance to the nearest station' do
