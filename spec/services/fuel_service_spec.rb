@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe FuelService do
-  it 'returns gas station data' do
+  it 'returns gas station data', :vcr do
     location = 'Denver, CO 80202'
     search = FuelService.get_station_data(location)
 

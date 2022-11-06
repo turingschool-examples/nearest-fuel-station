@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe MapService do
-  it 'returns map data' do
+  it 'returns map data', :vcr do
     from = '1331 17th St, Denver, CO'
     to = '1225 17th St, Denver, CO'
     search = MapService.get_directions(from, to)

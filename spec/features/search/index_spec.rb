@@ -4,7 +4,7 @@ RSpec.describe 'Search Page' do
   describe 'As a user' do
     describe 'When I visit "/"' do
       describe 'And I select "Turing" from the start location drop down' do
-        describe 'And I click "Find Nearest Station"' do
+        describe 'And I click "Find Nearest Station"', :vcr do
           before :each do
             visit '/'
             select 'Turing', from: :location
