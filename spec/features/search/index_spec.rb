@@ -9,10 +9,10 @@ RSpec.describe 'Search Page' do
             visit '/'
             select 'Turing', from: :location
             click_button 'Find Nearest Station'
-            location = 'Denver, CO 80202' #This will likely change with MAP api
-            from = '1331 17th St, Denver, CO' #temp
-            to = '1225 17th St, Denver, CO' #temp
+            location = "1331 17th St LL100, Denver, CO 80202"
             @station = FuelFacade.get_nearest_station(location)
+            from = location
+            to = @station.address
             @map = MapFacade.find_directions(from, to)
           end
 
