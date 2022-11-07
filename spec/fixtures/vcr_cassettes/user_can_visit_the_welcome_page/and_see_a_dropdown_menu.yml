@@ -1,0 +1,275 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest?format=json&fuel_type=ELEC&location=1331%2017th%20St%20LL100,%20Denver,%20CO%2080202&radius=0.1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Api-Key:
+      - "<nrel_api_key>"
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 07 Nov 2022 06:37:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Last-Modified:
+      - Mon, 07 Nov 2022 06:37:25 GMT
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      - max-age=31536000; preload
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding,Origin
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '984'
+      X-Request-Id:
+      - 3a9018ec2774407d868d26647f6a35cf
+      X-Runtime:
+      - '0.013394'
+      X-Vcap-Request-Id:
+      - 3038d326-523a-407f-6799-7be69a9976dc
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"latitude":39.75055,"longitude":-104.99673,"location_country":"US","precision":{"value":8,"name":"address","types":["street_address"]},"station_locator_url":"https://afdc.energy.gov/stations/","total_results":2,"station_counts":{"total":4,"fuels":{"BD":{"total":0},"E85":{"total":0},"ELEC":{"total":4,"stations":{"total":2}},"HY":{"total":0},"LNG":{"total":0},"CNG":{"total":0},"LPG":{"total":0}}},"offset":0,"fuel_stations":[{"access_code":"public","access_days_time":"24
+        hours daily","access_detail_code":null,"cards_accepted":null,"date_last_confirmed":"2022-11-07","expected_date":null,"fuel_type_code":"ELEC","groups_with_access_code":"Public","id":233490,"open_date":"2022-10-14","owner_type_code":null,"status_code":"E","restricted_access":null,"station_name":"17TH
+        ST PLAZA P1 EV STATION","station_phone":"888-758-4389","updated_at":"2022-11-07T01:39:07Z","facility_type":null,"geocode_status":"GPS","latitude":39.750284,"longitude":-104.995227,"city":"Denver","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1225
+        17th St","zip":"80202","country":"US","bd_blends":null,"cng_dispenser_num":null,"cng_fill_type_code":null,"cng_psi":null,"cng_renewable_source":null,"cng_total_compression":null,"cng_total_storage":null,"cng_vehicle_class":null,"e85_blender_pump":null,"e85_other_ethanol_blends":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"ev_pricing":null,"ev_renewable_source":null,"hy_is_retail":null,"hy_pressures":null,"hy_standards":null,"hy_status_link":null,"lng_renewable_source":null,"lng_vehicle_class":null,"lpg_primary":null,"lpg_nozzle_types":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"access_days_time_fr":null,"intersection_directions_fr":null,"bd_blends_fr":null,"groups_with_access_code_fr":"Public","ev_pricing_fr":null,"ev_network_ids":{"station":["USCPIL13129851"],"posts":["22450591","22450601"]},"distance":0.08212,"distance_km":0.13216},{"access_code":"public","access_days_time":"MO:
+        Not Specified; TU: Not Specified; WE: Not Specified; TH: Not Specified; FR:
+        Not Specified; SA: Not Specified; SU: Not Specified","access_detail_code":null,"cards_accepted":null,"date_last_confirmed":"2022-11-07","expected_date":"2022-09-09","fuel_type_code":"ELEC","groups_with_access_code":"TEMPORARILY
+        UNAVAILABLE (Public)","id":212679,"open_date":"2022-03-25","owner_type_code":null,"status_code":"T","restricted_access":null,"station_name":"CBRE
+        As Agent for EQC Operating Trust","station_phone":"800-663-5633","updated_at":"2022-11-07T00:35:39Z","facility_type":null,"geocode_status":"GPS","latitude":39.7502666,"longitude":-104.9951694,"city":"Denver","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1225
+        17th Street, Suite 130","zip":"80202","country":"US","bd_blends":null,"cng_dispenser_num":null,"cng_fill_type_code":null,"cng_psi":null,"cng_renewable_source":null,"cng_total_compression":null,"cng_total_storage":null,"cng_vehicle_class":null,"e85_blender_pump":null,"e85_other_ethanol_blends":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"SemaCharge
+        Network","ev_network_web":"https://semaconnect.com/","ev_other_evse":null,"ev_pricing":"FREE","ev_renewable_source":null,"hy_is_retail":null,"hy_pressures":null,"hy_standards":null,"hy_status_link":null,"lng_renewable_source":null,"lng_vehicle_class":null,"lpg_primary":null,"lpg_nozzle_types":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"access_days_time_fr":null,"intersection_directions_fr":null,"bd_blends_fr":null,"groups_with_access_code_fr":"TEMPORAIREMENT
+        SUSPENDU (Public)","ev_pricing_fr":null,"ev_network_ids":{"station":["5965"],"posts":["2642","2643"]},"distance":0.08538,"distance_km":0.13741}]}'
+  recorded_at: Mon, 07 Nov 2022 06:37:25 GMT
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/directions/v2/route?from=1331%2017th%20St%20LL100,%20Denver,%20CO%2080202&key=<mapquest_api_key>&to=1225%2017th%20St,%20Denver,%20CO%2080202&unit=m
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Mon, 07 Nov 2022 06:37:25 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '3891'
+      Set-Cookie:
+      - JSESSIONID=747623A5CA937B3E881DC329622A2A7E; Path=/directions; HttpOnly
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Last-Modified:
+      - Mon, 07 Nov 2022 06:37:25 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      X-Vz-Migration-Api:
+      - 'false'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJoYXNUb2xsUm9hZCI6ZmFsc2UsImhhc0JyaWRnZSI6ZmFsc2UsImJvdW5kaW5nQm94Ijp7ImxyIjp7ImxuZyI6LTEwNC45OTU3MTIsImxhdCI6MzkuNzQ5NzcxfSwidWwiOnsibG5nIjotMTA0Ljk5Njc3MywibGF0IjozOS43NTA2MX19LCJkaXN0YW5jZSI6MC4wODEsImhhc1RpbWVkUmVzdHJpY3Rpb24iOmZhbHNlLCJoYXNUdW5uZWwiOmZhbHNlLCJoYXNIaWdod2F5IjpmYWxzZSwiY29tcHV0ZWRXYXlwb2ludHMiOltdLCJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6LTQwMCwibWVzc2FnZSI6IiJ9LCJmb3JtYXR0ZWRUaW1lIjoiMDA6MDA6MTgiLCJzZXNzaW9uSWQiOiI2MzY4YTdhNS0wMzQ5LTVmMjEtMDJiNC0zN2ZhLTA2Yjg0MjMzZDhlZiIsImhhc0FjY2Vzc1Jlc3RyaWN0aW9uIjpmYWxzZSwicmVhbFRpbWUiOjE5LCJoYXNTZWFzb25hbENsb3N1cmUiOmZhbHNlLCJoYXNDb3VudHJ5Q3Jvc3MiOmZhbHNlLCJmdWVsVXNlZCI6MC4wMSwibGVncyI6W3siaGFzVG9sbFJvYWQiOmZhbHNlLCJoYXNCcmlkZ2UiOmZhbHNlLCJkZXN0TmFycmF0aXZlIjoiIiwiZGlzdGFuY2UiOjAuMDgxLCJoYXNUaW1lZFJlc3RyaWN0aW9uIjpmYWxzZSwiaGFzVHVubmVsIjpmYWxzZSwiaGFzSGlnaHdheSI6ZmFsc2UsImluZGV4IjowLCJmb3JtYXR0ZWRUaW1lIjoiMDA6MDA6MTgiLCJvcmlnSW5kZXgiOi0xLCJoYXNBY2Nlc3NSZXN0cmljdGlvbiI6ZmFsc2UsImhhc1NlYXNvbmFsQ2xvc3VyZSI6ZmFsc2UsImhhc0NvdW50cnlDcm9zcyI6ZmFsc2UsInJvYWRHcmFkZVN0cmF0ZWd5IjpbW11dLCJkZXN0SW5kZXgiOi0xLCJ0aW1lIjoxOCwiaGFzVW5wYXZlZCI6ZmFsc2UsIm9yaWdOYXJyYXRpdmUiOiIiLCJtYW5ldXZlcnMiOlt7ImRpc3RhbmNlIjowLjA4MSwic3RyZWV0cyI6WyIxN3RoIFN0Il0sIm5hcnJhdGl2ZSI6IlN0YXJ0IG91dCBnb2luZyBzb3V0aGVhc3Qgb24gMTd0aCBTdCB0b3dhcmQgTGFyaW1lciBTdC9DTy0zMy4iLCJ0dXJuVHlwZSI6Niwic3RhcnRQb2ludCI6eyJsbmciOi0xMDQuOTk2NzczLCJsYXQiOjM5Ljc1MDYxfSwiaW5kZXgiOjAsImZvcm1hdHRlZFRpbWUiOiIwMDowMDoxOCIsImRpcmVjdGlvbk5hbWUiOiJTb3V0aGVhc3QiLCJtYW5ldXZlck5vdGVzIjpbXSwibGlua0lkcyI6W10sInNpZ25zIjpbXSwibWFwVXJsIjoiaHR0cDovL3d3dy5tYXBxdWVzdGFwaS5jb20vc3RhdGljbWFwL3Y1L21hcD9rZXk9PG1hcHF1ZXN0X2FwaV9rZXk+JnNpemU9MjI1LDE2MCZsb2NhdGlvbnM9MzkuNzUwNjEwMzUxNTYyNSwtMTA0Ljk5Njc3Mjc2NjExMzI4fG1hcmtlci0xfHwzOS43NDk3NzExMTgxNjQwNiwtMTA0Ljk5NTcxMjI4MDI3MzQ0fG1hcmtlci0yfHwmY2VudGVyPTM5Ljc1MDE5MDczNDg2MzI4LC0xMDQuOTk2MjQyNTIzMTkzMzYmZGVmYXVsdE1hcmtlcj1ub25lJnpvb209MTQmcmFuZD0tNTUyMDQ0NzUyJnNlc3Npb249NjM2OGE3YTUtMDM0OS01ZjIxLTAyYjQtMzdmYS0wNmI4NDIzM2Q4ZWYiLCJ0cmFuc3BvcnRNb2RlIjoiQVVUTyIsImF0dHJpYnV0ZXMiOjAsInRpbWUiOjE4LCJpY29uVXJsIjoiaHR0cDovL2NvbnRlbnQubXFjZG4uY29tL21xc2l0ZS90dXJuc2lnbnMvaWNvbi1kaXJzLXN0YXJ0X3NtLmdpZiIsImRpcmVjdGlvbiI6NX0seyJkaXN0YW5jZSI6MCwic3RyZWV0cyI6W10sIm5hcnJhdGl2ZSI6IjEyMjUgMTdUSCBTVCBpcyBvbiB0aGUgcmlnaHQuIiwidHVyblR5cGUiOi0xLCJzdGFydFBvaW50Ijp7ImxuZyI6LTEwNC45OTU3MTIsImxhdCI6MzkuNzQ5NzcxfSwiaW5kZXgiOjEsImZvcm1hdHRlZFRpbWUiOiIwMDowMDowMCIsImRpcmVjdGlvbk5hbWUiOiIiLCJtYW5ldXZlck5vdGVzIjpbXSwibGlua0lkcyI6W10sInNpZ25zIjpbXSwidHJhbnNwb3J0TW9kZSI6IkFVVE8iLCJhdHRyaWJ1dGVzIjowLCJ0aW1lIjowLCJpY29uVXJsIjoiaHR0cDovL2NvbnRlbnQubXFjZG4uY29tL21xc2l0ZS90dXJuc2lnbnMvaWNvbi1kaXJzLWVuZF9zbS5naWYiLCJkaXJlY3Rpb24iOjB9XSwiaGFzRmVycnkiOmZhbHNlfV0sIm9wdGlvbnMiOnsiYXJ0ZXJ5V2VpZ2h0cyI6W10sImN5Y2xpbmdSb2FkRmFjdG9yIjoxLCJ0aW1lVHlwZSI6MCwidXNlVHJhZmZpYyI6ZmFsc2UsInJldHVybkxpbmtEaXJlY3Rpb25zIjpmYWxzZSwiY291bnRyeUJvdW5kYXJ5RGlzcGxheSI6dHJ1ZSwiZW5oYW5jZWROYXJyYXRpdmUiOmZhbHNlLCJsb2NhbGUiOiJlbl9VUyIsInRyeUF2b2lkTGlua0lkcyI6W10sImRyaXZpbmdTdHlsZSI6MiwiZG9SZXZlcnNlR2VvY29kZSI6dHJ1ZSwiZ2VuZXJhbGl6ZSI6LTEsIm11c3RBdm9pZExpbmtJZHMiOltdLCJzaWRlT2ZTdHJlZXREaXNwbGF5Ijp0cnVlLCJyb3V0ZVR5cGUiOiJGQVNURVNUIiwiYXZvaWRUaW1lZENvbmRpdGlvbnMiOmZhbHNlLCJyb3V0ZU51bWJlciI6MCwic2hhcGVGb3JtYXQiOiJyYXciLCJtYXhXYWxraW5nRGlzdGFuY2UiOi0xLCJkZXN0aW5hdGlvbk1hbmV1dmVyRGlzcGxheSI6dHJ1ZSwidHJhbnNmZXJQZW5hbHR5IjotMSwibmFycmF0aXZlVHlwZSI6InRleHQiLCJ3YWxraW5nU3BlZWQiOi0xLCJ1cmJhbkF2b2lkRmFjdG9yIjotMSwic3RhdGVCb3VuZGFyeURpc3BsYXkiOnRydWUsInVuaXQiOiJNIiwiaGlnaHdheUVmZmljaWVuY3kiOjIyLCJtYXhMaW5rSWQiOjAsIm1hbmV1dmVyUGVuYWx0eSI6LTEsImF2b2lkVHJpcElkcyI6W10sImZpbHRlclpvbmVGYWN0b3IiOi0xLCJtYW5tYXBzIjoidHJ1ZSJ9LCJsb2NhdGlvbnMiOlt7ImRyYWdQb2ludCI6ZmFsc2UsImRpc3BsYXlMYXRMbmciOnsibG5nIjotMTA0Ljk5Njc3MywibGF0IjozOS43NTA2MTR9LCJhZG1pbkFyZWE0IjoiRGVudmVyIiwiYWRtaW5BcmVhNSI6IkRlbnZlciIsInBvc3RhbENvZGUiOiI4MDIwMi0xNTA3IiwiYWRtaW5BcmVhMSI6IlVTIiwiYWRtaW5BcmVhMyI6IkNPIiwidHlwZSI6InMiLCJzaWRlT2ZTdHJlZXQiOiJSIiwiZ2VvY29kZVF1YWxpdHlDb2RlIjoiUDFBQUEiLCJhZG1pbkFyZWE0VHlwZSI6IkNvdW50eSIsImxpbmtJZCI6MTI0NzEzMjYsInN0cmVldCI6IjEzMzEgMTd0aCBTdCIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImdlb2NvZGVRdWFsaXR5IjoiUE9JTlQiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJhZG1pbkFyZWEzVHlwZSI6IlN0YXRlIiwibGF0TG5nIjp7ImxuZyI6LTEwNC45OTY3NzUsImxhdCI6MzkuNzUwNjE0fX0seyJkcmFnUG9pbnQiOmZhbHNlLCJkaXNwbGF5TGF0TG5nIjp7ImxuZyI6LTEwNC45OTU3MTIsImxhdCI6MzkuNzQ5NzcxfSwiYWRtaW5BcmVhNCI6IkRlbnZlciIsImFkbWluQXJlYTUiOiJEZW52ZXIiLCJwb3N0YWxDb2RlIjoiODAyMDItMTUwMSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTMiOiJDTyIsInR5cGUiOiJzIiwic2lkZU9mU3RyZWV0IjoiTCIsImdlb2NvZGVRdWFsaXR5Q29kZSI6IlAxQUFBIiwiYWRtaW5BcmVhNFR5cGUiOiJDb3VudHkiLCJsaW5rSWQiOjY5ODA1MTc1LCJzdHJlZXQiOiIxMjI1IDE3dGggU3QiLCJhZG1pbkFyZWE1VHlwZSI6IkNpdHkiLCJnZW9jb2RlUXVhbGl0eSI6IlBPSU5UIiwiYWRtaW5BcmVhMVR5cGUiOiJDb3VudHJ5IiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImxhdExuZyI6eyJsbmciOi0xMDQuOTk1NzEyLCJsYXQiOjM5Ljc0OTc3Mn19XSwidGltZSI6MTgsImhhc1VucGF2ZWQiOmZhbHNlLCJsb2NhdGlvblNlcXVlbmNlIjpbMCwxXSwiaGFzRmVycnkiOmZhbHNlfSwiaW5mbyI6eyJzdGF0dXNjb2RlIjowLCJjb3B5cmlnaHQiOnsiaW1hZ2VBbHRUZXh0IjoiwqkgMjAyMiBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJ0ZXh0IjoiwqkgMjAyMiBNYXBRdWVzdCwgSW5jLiJ9LCJtZXNzYWdlcyI6W119fQ==
+  recorded_at: Mon, 07 Nov 2022 06:37:25 GMT
+- request:
+    method: get
+    uri: https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest?format=json&fuel_type=ELEC&location=1331%2017th%20St%20LL100,%20Denver,%20CO%2080202&radius=0.1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Api-Key:
+      - "<nrel_api_key>"
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 07 Nov 2022 06:51:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Last-Modified:
+      - Mon, 07 Nov 2022 06:51:14 GMT
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      - max-age=31536000; preload
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding,Origin
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '989'
+      X-Request-Id:
+      - 0fca8bfbb1c14b8b7aec20226fe5e771
+      X-Runtime:
+      - '0.009868'
+      X-Vcap-Request-Id:
+      - 76825e9e-e508-4ca4-42d5-505af3ad7fbf
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"latitude":39.75055,"longitude":-104.99673,"location_country":"US","precision":{"value":8,"name":"address","types":["street_address"]},"station_locator_url":"https://afdc.energy.gov/stations/","total_results":2,"station_counts":{"total":4,"fuels":{"BD":{"total":0},"E85":{"total":0},"ELEC":{"total":4,"stations":{"total":2}},"HY":{"total":0},"LNG":{"total":0},"CNG":{"total":0},"LPG":{"total":0}}},"offset":0,"fuel_stations":[{"access_code":"public","access_days_time":"24
+        hours daily","access_detail_code":null,"cards_accepted":null,"date_last_confirmed":"2022-11-07","expected_date":null,"fuel_type_code":"ELEC","groups_with_access_code":"Public","id":233490,"open_date":"2022-10-14","owner_type_code":null,"status_code":"E","restricted_access":null,"station_name":"17TH
+        ST PLAZA P1 EV STATION","station_phone":"888-758-4389","updated_at":"2022-11-07T01:39:07Z","facility_type":null,"geocode_status":"GPS","latitude":39.750284,"longitude":-104.995227,"city":"Denver","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1225
+        17th St","zip":"80202","country":"US","bd_blends":null,"cng_dispenser_num":null,"cng_fill_type_code":null,"cng_psi":null,"cng_renewable_source":null,"cng_total_compression":null,"cng_total_storage":null,"cng_vehicle_class":null,"e85_blender_pump":null,"e85_other_ethanol_blends":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"ev_pricing":null,"ev_renewable_source":null,"hy_is_retail":null,"hy_pressures":null,"hy_standards":null,"hy_status_link":null,"lng_renewable_source":null,"lng_vehicle_class":null,"lpg_primary":null,"lpg_nozzle_types":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"access_days_time_fr":null,"intersection_directions_fr":null,"bd_blends_fr":null,"groups_with_access_code_fr":"Public","ev_pricing_fr":null,"ev_network_ids":{"station":["USCPIL13129851"],"posts":["22450591","22450601"]},"distance":0.08212,"distance_km":0.13216},{"access_code":"public","access_days_time":"MO:
+        Not Specified; TU: Not Specified; WE: Not Specified; TH: Not Specified; FR:
+        Not Specified; SA: Not Specified; SU: Not Specified","access_detail_code":null,"cards_accepted":null,"date_last_confirmed":"2022-11-07","expected_date":"2022-09-09","fuel_type_code":"ELEC","groups_with_access_code":"TEMPORARILY
+        UNAVAILABLE (Public)","id":212679,"open_date":"2022-03-25","owner_type_code":null,"status_code":"T","restricted_access":null,"station_name":"CBRE
+        As Agent for EQC Operating Trust","station_phone":"800-663-5633","updated_at":"2022-11-07T00:35:39Z","facility_type":null,"geocode_status":"GPS","latitude":39.7502666,"longitude":-104.9951694,"city":"Denver","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1225
+        17th Street, Suite 130","zip":"80202","country":"US","bd_blends":null,"cng_dispenser_num":null,"cng_fill_type_code":null,"cng_psi":null,"cng_renewable_source":null,"cng_total_compression":null,"cng_total_storage":null,"cng_vehicle_class":null,"e85_blender_pump":null,"e85_other_ethanol_blends":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"SemaCharge
+        Network","ev_network_web":"https://semaconnect.com/","ev_other_evse":null,"ev_pricing":"FREE","ev_renewable_source":null,"hy_is_retail":null,"hy_pressures":null,"hy_standards":null,"hy_status_link":null,"lng_renewable_source":null,"lng_vehicle_class":null,"lpg_primary":null,"lpg_nozzle_types":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"access_days_time_fr":null,"intersection_directions_fr":null,"bd_blends_fr":null,"groups_with_access_code_fr":"TEMPORAIREMENT
+        SUSPENDU (Public)","ev_pricing_fr":null,"ev_network_ids":{"station":["5965"],"posts":["2642","2643"]},"distance":0.08538,"distance_km":0.13741}]}'
+  recorded_at: Mon, 07 Nov 2022 06:51:14 GMT
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/directions/v2/route?from=1331%2017th%20St%20LL100,%20Denver,%20CO%2080202&key=<mapquest_api_key>&to=1225%2017th%20St,%20Denver,%20CO%2080202&unit=m
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Mon, 07 Nov 2022 06:51:14 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '3890'
+      Set-Cookie:
+      - JSESSIONID=40E32D5A1C08B621CCC07C645E39675E; Path=/directions; HttpOnly
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Last-Modified:
+      - Mon, 07 Nov 2022 06:51:14 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      X-Vz-Migration-Api:
+      - 'false'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJoYXNUb2xsUm9hZCI6ZmFsc2UsImhhc0JyaWRnZSI6ZmFsc2UsImJvdW5kaW5nQm94Ijp7ImxyIjp7ImxuZyI6LTEwNC45OTU3MTIsImxhdCI6MzkuNzQ5NzcxfSwidWwiOnsibG5nIjotMTA0Ljk5Njc3MywibGF0IjozOS43NTA2MX19LCJkaXN0YW5jZSI6MC4wODEsImhhc1RpbWVkUmVzdHJpY3Rpb24iOmZhbHNlLCJoYXNUdW5uZWwiOmZhbHNlLCJoYXNIaWdod2F5IjpmYWxzZSwiY29tcHV0ZWRXYXlwb2ludHMiOltdLCJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6LTQwMCwibWVzc2FnZSI6IiJ9LCJmb3JtYXR0ZWRUaW1lIjoiMDA6MDA6MTgiLCJzZXNzaW9uSWQiOiI2MzY4YWFlMi0wM2M4LTVmMjEtMDJiNC0zODJlLTBhZGZkNWNhMzczMSIsImhhc0FjY2Vzc1Jlc3RyaWN0aW9uIjpmYWxzZSwicmVhbFRpbWUiOjIwLCJoYXNTZWFzb25hbENsb3N1cmUiOmZhbHNlLCJoYXNDb3VudHJ5Q3Jvc3MiOmZhbHNlLCJmdWVsVXNlZCI6MC4wMSwibGVncyI6W3siaGFzVG9sbFJvYWQiOmZhbHNlLCJoYXNCcmlkZ2UiOmZhbHNlLCJkZXN0TmFycmF0aXZlIjoiIiwiZGlzdGFuY2UiOjAuMDgxLCJoYXNUaW1lZFJlc3RyaWN0aW9uIjpmYWxzZSwiaGFzVHVubmVsIjpmYWxzZSwiaGFzSGlnaHdheSI6ZmFsc2UsImluZGV4IjowLCJmb3JtYXR0ZWRUaW1lIjoiMDA6MDA6MTgiLCJvcmlnSW5kZXgiOi0xLCJoYXNBY2Nlc3NSZXN0cmljdGlvbiI6ZmFsc2UsImhhc1NlYXNvbmFsQ2xvc3VyZSI6ZmFsc2UsImhhc0NvdW50cnlDcm9zcyI6ZmFsc2UsInJvYWRHcmFkZVN0cmF0ZWd5IjpbW11dLCJkZXN0SW5kZXgiOi0xLCJ0aW1lIjoxOCwiaGFzVW5wYXZlZCI6ZmFsc2UsIm9yaWdOYXJyYXRpdmUiOiIiLCJtYW5ldXZlcnMiOlt7ImRpc3RhbmNlIjowLjA4MSwic3RyZWV0cyI6WyIxN3RoIFN0Il0sIm5hcnJhdGl2ZSI6IlN0YXJ0IG91dCBnb2luZyBzb3V0aGVhc3Qgb24gMTd0aCBTdCB0b3dhcmQgTGFyaW1lciBTdC9DTy0zMy4iLCJ0dXJuVHlwZSI6Niwic3RhcnRQb2ludCI6eyJsbmciOi0xMDQuOTk2NzczLCJsYXQiOjM5Ljc1MDYxfSwiaW5kZXgiOjAsImZvcm1hdHRlZFRpbWUiOiIwMDowMDoxOCIsImRpcmVjdGlvbk5hbWUiOiJTb3V0aGVhc3QiLCJtYW5ldXZlck5vdGVzIjpbXSwibGlua0lkcyI6W10sInNpZ25zIjpbXSwibWFwVXJsIjoiaHR0cDovL3d3dy5tYXBxdWVzdGFwaS5jb20vc3RhdGljbWFwL3Y1L21hcD9rZXk9PG1hcHF1ZXN0X2FwaV9rZXk+JnNpemU9MjI1LDE2MCZsb2NhdGlvbnM9MzkuNzUwNjEwMzUxNTYyNSwtMTA0Ljk5Njc3Mjc2NjExMzI4fG1hcmtlci0xfHwzOS43NDk3NzExMTgxNjQwNiwtMTA0Ljk5NTcxMjI4MDI3MzQ0fG1hcmtlci0yfHwmY2VudGVyPTM5Ljc1MDE5MDczNDg2MzI4LC0xMDQuOTk2MjQyNTIzMTkzMzYmZGVmYXVsdE1hcmtlcj1ub25lJnpvb209MTQmcmFuZD0yNDc0ODcwMDkmc2Vzc2lvbj02MzY4YWFlMi0wM2M4LTVmMjEtMDJiNC0zODJlLTBhZGZkNWNhMzczMSIsInRyYW5zcG9ydE1vZGUiOiJBVVRPIiwiYXR0cmlidXRlcyI6MCwidGltZSI6MTgsImljb25VcmwiOiJodHRwOi8vY29udGVudC5tcWNkbi5jb20vbXFzaXRlL3R1cm5zaWducy9pY29uLWRpcnMtc3RhcnRfc20uZ2lmIiwiZGlyZWN0aW9uIjo1fSx7ImRpc3RhbmNlIjowLCJzdHJlZXRzIjpbXSwibmFycmF0aXZlIjoiMTIyNSAxN1RIIFNUIGlzIG9uIHRoZSByaWdodC4iLCJ0dXJuVHlwZSI6LTEsInN0YXJ0UG9pbnQiOnsibG5nIjotMTA0Ljk5NTcxMiwibGF0IjozOS43NDk3NzF9LCJpbmRleCI6MSwiZm9ybWF0dGVkVGltZSI6IjAwOjAwOjAwIiwiZGlyZWN0aW9uTmFtZSI6IiIsIm1hbmV1dmVyTm90ZXMiOltdLCJsaW5rSWRzIjpbXSwic2lnbnMiOltdLCJ0cmFuc3BvcnRNb2RlIjoiQVVUTyIsImF0dHJpYnV0ZXMiOjAsInRpbWUiOjAsImljb25VcmwiOiJodHRwOi8vY29udGVudC5tcWNkbi5jb20vbXFzaXRlL3R1cm5zaWducy9pY29uLWRpcnMtZW5kX3NtLmdpZiIsImRpcmVjdGlvbiI6MH1dLCJoYXNGZXJyeSI6ZmFsc2V9XSwib3B0aW9ucyI6eyJhcnRlcnlXZWlnaHRzIjpbXSwiY3ljbGluZ1JvYWRGYWN0b3IiOjEsInRpbWVUeXBlIjowLCJ1c2VUcmFmZmljIjpmYWxzZSwicmV0dXJuTGlua0RpcmVjdGlvbnMiOmZhbHNlLCJjb3VudHJ5Qm91bmRhcnlEaXNwbGF5Ijp0cnVlLCJlbmhhbmNlZE5hcnJhdGl2ZSI6ZmFsc2UsImxvY2FsZSI6ImVuX1VTIiwidHJ5QXZvaWRMaW5rSWRzIjpbXSwiZHJpdmluZ1N0eWxlIjoyLCJkb1JldmVyc2VHZW9jb2RlIjp0cnVlLCJnZW5lcmFsaXplIjotMSwibXVzdEF2b2lkTGlua0lkcyI6W10sInNpZGVPZlN0cmVldERpc3BsYXkiOnRydWUsInJvdXRlVHlwZSI6IkZBU1RFU1QiLCJhdm9pZFRpbWVkQ29uZGl0aW9ucyI6ZmFsc2UsInJvdXRlTnVtYmVyIjowLCJzaGFwZUZvcm1hdCI6InJhdyIsIm1heFdhbGtpbmdEaXN0YW5jZSI6LTEsImRlc3RpbmF0aW9uTWFuZXV2ZXJEaXNwbGF5Ijp0cnVlLCJ0cmFuc2ZlclBlbmFsdHkiOi0xLCJuYXJyYXRpdmVUeXBlIjoidGV4dCIsIndhbGtpbmdTcGVlZCI6LTEsInVyYmFuQXZvaWRGYWN0b3IiOi0xLCJzdGF0ZUJvdW5kYXJ5RGlzcGxheSI6dHJ1ZSwidW5pdCI6Ik0iLCJoaWdod2F5RWZmaWNpZW5jeSI6MjIsIm1heExpbmtJZCI6MCwibWFuZXV2ZXJQZW5hbHR5IjotMSwiYXZvaWRUcmlwSWRzIjpbXSwiZmlsdGVyWm9uZUZhY3RvciI6LTEsIm1hbm1hcHMiOiJ0cnVlIn0sImxvY2F0aW9ucyI6W3siZHJhZ1BvaW50IjpmYWxzZSwiZGlzcGxheUxhdExuZyI6eyJsbmciOi0xMDQuOTk2NzczLCJsYXQiOjM5Ljc1MDYxNH0sImFkbWluQXJlYTQiOiJEZW52ZXIiLCJhZG1pbkFyZWE1IjoiRGVudmVyIiwicG9zdGFsQ29kZSI6IjgwMjAyLTE1MDciLCJhZG1pbkFyZWExIjoiVVMiLCJhZG1pbkFyZWEzIjoiQ08iLCJ0eXBlIjoicyIsInNpZGVPZlN0cmVldCI6IlIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJQMUFBQSIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwibGlua0lkIjoxMjQ3MTMyNiwic3RyZWV0IjoiMTMzMSAxN3RoIFN0IiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiZ2VvY29kZVF1YWxpdHkiOiJQT0lOVCIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsImFkbWluQXJlYTNUeXBlIjoiU3RhdGUiLCJsYXRMbmciOnsibG5nIjotMTA0Ljk5Njc3NSwibGF0IjozOS43NTA2MTR9fSx7ImRyYWdQb2ludCI6ZmFsc2UsImRpc3BsYXlMYXRMbmciOnsibG5nIjotMTA0Ljk5NTcxMiwibGF0IjozOS43NDk3NzF9LCJhZG1pbkFyZWE0IjoiRGVudmVyIiwiYWRtaW5BcmVhNSI6IkRlbnZlciIsInBvc3RhbENvZGUiOiI4MDIwMi0xNTAxIiwiYWRtaW5BcmVhMSI6IlVTIiwiYWRtaW5BcmVhMyI6IkNPIiwidHlwZSI6InMiLCJzaWRlT2ZTdHJlZXQiOiJMIiwiZ2VvY29kZVF1YWxpdHlDb2RlIjoiUDFBQUEiLCJhZG1pbkFyZWE0VHlwZSI6IkNvdW50eSIsImxpbmtJZCI6Njk4MDUxNzUsInN0cmVldCI6IjEyMjUgMTd0aCBTdCIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImdlb2NvZGVRdWFsaXR5IjoiUE9JTlQiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJhZG1pbkFyZWEzVHlwZSI6IlN0YXRlIiwibGF0TG5nIjp7ImxuZyI6LTEwNC45OTU3MTIsImxhdCI6MzkuNzQ5NzcyfX1dLCJ0aW1lIjoxOCwiaGFzVW5wYXZlZCI6ZmFsc2UsImxvY2F0aW9uU2VxdWVuY2UiOlswLDFdLCJoYXNGZXJyeSI6ZmFsc2V9LCJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJpbWFnZUFsdFRleHQiOiLCqSAyMDIyIE1hcFF1ZXN0LCBJbmMuIiwiaW1hZ2VVcmwiOiJodHRwOi8vYXBpLm1xY2RuLmNvbS9yZXMvbXFsb2dvLmdpZiIsInRleHQiOiLCqSAyMDIyIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX19
+  recorded_at: Mon, 07 Nov 2022 06:51:14 GMT
+recorded_with: VCR 6.1.0
