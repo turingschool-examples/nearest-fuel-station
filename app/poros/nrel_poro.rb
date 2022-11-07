@@ -18,4 +18,8 @@ class NrelPoro
     @distance = api[:distance]
     @ev_connector_types = api[:ev_connector_types]
   end
+
+  def address
+    "#{@street_address}, #{@city}, #{@state} #{zip}"
+  end
 end

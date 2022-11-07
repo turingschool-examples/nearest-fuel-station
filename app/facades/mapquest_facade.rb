@@ -1,5 +1,6 @@
-class MapQuestFacade < MapQuestService 
+class MapquestFacade < MapquestService 
   def self.directions(from, to)
-    directions_endpoint[:route]
+    test = directions_endpoint(from, to)[:route]
+    require 'pry'; binding.pry
   end
 end

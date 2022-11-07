@@ -1,8 +1,6 @@
-class MapQuestService 
+class MapquestService 
   def self.conn
-    Faraday.new(url: 'http://www.mapquestapi.com') do |faraday|
-      faraday.headers["X-API-KEY"] = ENV['mapquest_api_key']
-    end
+    Faraday.new('http://www.mapquestapi.com', key: ENV['mapquest_api_key'])
   end
 
   def self.parse(api_data)
@@ -10,7 +8,7 @@ class MapQuestService
   end
 
   def self.directions_endpoint(from, to)
-    response = conn.get('/directions/v2/route', params: {from: from, to: to})
+    response = conn.get('/directions/v2/route', from: from, to: to)
     parse(response)
   end
 end
