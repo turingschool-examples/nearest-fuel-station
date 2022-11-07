@@ -1,7 +1,7 @@
 class MapQuestService 
   def self.conn
     Faraday.new(url: 'http://www.mapquestapi.com') do |faraday|
-      faraday.headers["X-API-KEY"] = ENV['nrel_api_key']
+      faraday.headers["X-API-KEY"] = ENV['mapquest_api_key']
     end
   end
 
