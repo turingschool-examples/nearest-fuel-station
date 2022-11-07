@@ -1,6 +1,5 @@
 class MapquestFacade < MapquestService 
   def self.directions(from, to)
-    test = directions_endpoint(from, to)[:route]
-    require 'pry'; binding.pry
+    MapquestPoro.new(directions_endpoint(from, to)[:route])
   end
 end
