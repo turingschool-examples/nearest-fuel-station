@@ -1,5 +1,6 @@
 class SearchController < ApplicationController 
   def index
-    test = MapQuestFacade.directions
+    
+    test = MapQuestFacade.directions(params[:location])
   end
 end
