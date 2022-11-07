@@ -1,0 +1,16 @@
+<h2>Directions: <%= @directions.narrative %> </h2>
+
+<p>Name: <%= @station.name %></p>
+
+<p>Address: <%= @station.address %></p>
+
+<p>Hours: <%= @station.access_times %></p>
+
+<p>Connector Types:</p>
+<% @station.ev_connector_types.each do |connector| %>
+  <p><%= connector %></p>
+<% end %>
+
+<p>Distance: <%= @station.distance %></p>
+
+<p>Travel Time: <%= distance_of_time_in_words(0, @directions.travel_time, options: { include_seconds: true }) %></p>
