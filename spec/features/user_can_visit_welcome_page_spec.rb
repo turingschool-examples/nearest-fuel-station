@@ -27,7 +27,7 @@ describe "user can visit the welcome page" do
     expect(page).to have_content("Search For The Nearest Electric Charging Station")
     expect(page).to have_button("Find Nearest Station")
 
-    select "Turing", from: "Location"
+    select "Turing", from: "location"
 
     click_on "Find Nearest Station"
 
