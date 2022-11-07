@@ -22,7 +22,7 @@ describe "user can visit the welcome page" do
   #   "Turn left onto Lawrence St Destination will be on the left"
 
   scenario "and see a dropdown menu", vcr: { record: :new_episodes } do
-    
+
     location = '1331 17th St LL100, Denver, CO 80202'
     station = NrelFacade.nearest_fuel_station(location)
     directions = MapquestFacade.directions(location, station.address)
@@ -37,7 +37,7 @@ describe "user can visit the welcome page" do
     click_on "Find Nearest Station"
 
     expect(current_path).to eq(search_path)
-    
+    save_and_open_page
     expect(page).to have_content(station.name)
     expect(page).to have_content(station.address)
     expect(page).to have_content(station.access_times)

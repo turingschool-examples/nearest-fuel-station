@@ -11,6 +11,6 @@
   <p><%= connector %></p>
 <% end %>
 
-<p>Distance: <%= @station.distance %></p>
+<p>Distance: <%= @station.distance.round(1) %> Mile</p>
 
 <p>Travel Time: <%= distance_of_time_in_words(0, @directions.travel_time, options: { include_seconds: true }) %></p>
